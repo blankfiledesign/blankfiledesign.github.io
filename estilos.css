@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: rgba(0, 0, 0, 0.185);
+    
+}
+
+.header{
+    background-image: url(assets/hero.jpg);
+    position: fixed;
+    width: 100%;
+}
+nav,
+.offcanvas {
+    background-color: #00000086;
+    
+  }
+  .navbar-toggler {
+    border: none;
+  }
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .nav-link{
+    color: aliceblue;
+  }
+
+  .articulo1{
+    background-color: aqua;
+  }
+
+  @media (max-width: 768px) {
+    .navbar-nav > li:hover {
+      background-color: #07c3e9a2;
+    }
+
+  }
