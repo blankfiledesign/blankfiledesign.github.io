@@ -1,28 +1,35 @@
 *{
   margin: 0;
-  
 }
 
 body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 24px;
-    background-color: rgba(0, 0, 0, 0.185);
-    
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: image(overflow);    
+    color: #fff;
 }
 
 #header{
-    background-image: url(assets/hero.jpg);
     position: fixed !important;
     width: 100%;
+
 }
 
-nav,
-.offcanvas {
-    background-color: #00000086;
-    
+nav {
+    background-color: #000000c7;
+  }
+
+  .offcanvas{
+    width: 100% !important;
+    background-color: #000000;
   }
   .navbar-toggler {
-    border: none;
+    border:none;
+    color: aqua;
+    
   }
   .navbar-toggler:focus {
     outline: none;
@@ -30,21 +37,40 @@ nav,
   }
 
   .nav-link{
-    color: aliceblue;
+    color: rgb(0, 217, 255);
+
   }
 
+  .navbar-brand{
+    color: rgb(0, 217, 255);
+    
+  }
+
+  .navbar-brand:hover,
+  .offcanvas-title:hover,
+  .nav-link:hover{
+    color: #a945c7;
+  }
  
+  .offcanvas-title{
+    font-size: 1.7em;
+    color: #45adc7;
+  }
+  .logo{
+    width: 3em;
+    border-radius: 50%;
+  }
 
   @media (max-width: 768px) {
     .navbar-nav > li:hover {
-      background-color: #07c3e9a2;
+    background-color: #07c3e9a2;
     }
 
   }
 
 
   #bannertop {
-    justify-content: center;
+    justify-content:center;
     background: url();
     min-height: 50vh;
     background-repeat: no-repeat;
@@ -56,11 +82,12 @@ nav,
   #fondo {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.67);
-    margin-top: 120px;
+    margin-top: 200px;
     margin-bottom: 80px;
     padding-left: 10px;
     padding-top: 50px;
     padding-bottom: 20px;
+    color: #fff;
   }
   
   h1{
@@ -83,6 +110,7 @@ nav,
     background: #45adc7;
     box-shadow: 0 0 10px #45adc7, 0 0 40px #45adc7, 0 0 80px #a945c7;
     transition-delay: 1s;
+    color: #a945c7;
  }
 .btn-neon span{
     position: absolute;
