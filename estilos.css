@@ -1,15 +1,14 @@
-*{
-  margin: 0;
-}
+
 
 body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 24px;
+    
     background-image: url();
     background-size: cover;
     background-repeat: no-repeat;
     background-image: image(overflow);    
-    color: #fff;
+    
 }
 
 #header{
@@ -57,7 +56,7 @@ nav {
     color: #45adc7;
   }
   .logo{
-    width: 3em;
+    width: 2.5em;
     border-radius: 50%;
   }
 
@@ -95,7 +94,7 @@ nav {
   }
 /*boton baner*/
 
-  .btn-neon{
+  .btn-neon {
     position: relative;
     display: inline-block;
     padding: 15px 30px;
@@ -107,8 +106,8 @@ nav {
     transition: 0.2s;
 }
 .btn-neon:hover{
-    background: #45adc7;
-    box-shadow: 0 0 10px #45adc7, 0 0 40px #45adc7, 0 0 80px #a945c7;
+    background: #45adc7 ;
+    box-shadow: 0 0 10px #45adc7, 0 0 40px #45adc7, 0 0 80px #a945c7 !important;
     transition-delay: 1s;
     color: #a945c7;
  }
@@ -163,3 +162,5 @@ nav {
     transition: 1s;
     transition-delay: 0.75s;
 }
+
+
