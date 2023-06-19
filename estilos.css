@@ -212,4 +212,36 @@ nav {
     transition-delay: 0.75s;
 }
 
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
+.caja {
+  border: 1px solid black;
+  padding: 15px;
+  width: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.animado{
+  opacity: 0;
+  transition: all 1.5s;
+
+}
+
+.mostrarArriba{
+  animation: mostrarArriba 1s;
+}
+
+@keyframes mostrarArriba {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
