@@ -7,13 +7,36 @@ function mostrarScroll(){
    for (var i=0; i < animado.length; i++ ) {
     let alturaAnimado = animado[i].offsetTop;
 
-    if( alturaAnimado - 550 < scrollTop ){
+    if( alturaAnimado - 650 < scrollTop ){
         animado[i].style.opacity = 1;
 
 
-        animado[i].classList.add("mostrarArriba")
+        animado[i].classList.add("mostrarIzquierda")
     }
    }
 }
 
 window.addEventListener('scroll', mostrarScroll);
+
+
+
+/*derecha a izquierda*/
+
+let animadoD = document.querySelectorAll(".animadoD");
+
+function mostrarScrollD(){
+
+   let scrollTop = document.documentElement.scrollTop;
+
+   for (var i=0; i < animadoD.length; i++ ) {
+    let alturaAnimadoD = animadoD[i].offsetTop;
+
+    if( alturaAnimadoD - 650 < scrollTop ){
+        animadoD[i].style.opacity = 1;
+
+        animadoD[i].classList.add("mostrarDerecha")
+    }
+   }
+}
+
+window.addEventListener('scroll', mostrarScrollD);
