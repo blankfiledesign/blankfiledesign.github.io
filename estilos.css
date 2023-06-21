@@ -1,9 +1,9 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap');
 
 body {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px; 
-    font-weight: 700;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.5em; 
+    font-weight: 300;
     
     
     
@@ -227,6 +227,7 @@ nav {
   align-items: center;
   justify-content: center;
   margin-top:60px ;
+  margin-bottom: 60px;
 }
 .caja{
   text-align: center;
@@ -234,7 +235,7 @@ nav {
   margin-top: 10px;
 }
 .caja h2{
- font-weight: 700;
+ font-weight: 500;
  font-size: 2em;
 }
 @media (min-width: 570px){
@@ -309,30 +310,48 @@ margin-top: 25px;
 }
 
 .cierre h2{
-  font-weight: 700;
+  font-weight: 500;
   font-size: 2em;
-}
-
-.divider{
-  justify-content: center;
-
 }
 
 .divider_internal::before{
   content: "";
   position: absolute;
-  width: 250px;
+  margin-left:-12% ;
+  width: 40%;
   height: 4px;
   background-color: #24a7cf;
 }
+@media(max-width:1080px){
+  .divider_internal::before{
+    content: "";
+    position: absolute;
+    margin-left: -13%;
+    width: 40%;
+    height: 4px;
+    background-color: #24a7cf;
+  }
+}
 
 
+@media (max-width:768px)
+{
+  .divider_internal::before{
+    content: "";
+    position: absolute;
+    margin-left: 28%;
+    width: 40%;
+    height: 4px;
+    background-color: #24a7cf;
+  }
+}
 #form-consulta{
   box-shadow: 0px 0px 20px rgb(0, 225, 255);
   background-image:url(assets/1.png);
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
+  margin-top: 50px;
 }
 
 
