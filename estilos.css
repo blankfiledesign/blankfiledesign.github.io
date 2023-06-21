@@ -2,7 +2,8 @@
 
 body {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 22px; 
+    font-size: 20px; 
+    font-weight: 700;
     
     
 }
@@ -11,6 +12,7 @@ body {
     position: fixed !important;
     width: 100%;
     z-index: 50;
+    box-shadow: 0px 0px 8px rgb(0, 225, 255);
 
 }
 
@@ -19,16 +21,13 @@ nav {
   }
 
   .offcanvas{
-    width: 100% !important;
+    width: 80% !important;
     background-color: #000000;
     
   }
   .navbar-toggler {
     border:none;
-    position: relative;
-    left: 90%;
-    top: 4px;
-     background-color: #a945c77c;
+    background-color: #ea00ffcc;
   }
   .navbar-toggler:focus {
     outline: none;
@@ -38,6 +37,7 @@ nav {
 
   .nav-link{
     color: rgb(0, 217, 255);
+    
 
   }
 
@@ -121,6 +121,7 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    box-shadow: 0px 0px 8px rgb(0, 225, 255);
   }
 
 
@@ -215,31 +216,7 @@ nav {
 
 /*intro*/
 
-.intro{
-  justify-content: center;
-  text-align: center;
-  padding-top: 50px;
-  margin-bottom: 50px;
-margin-top: 25px;
-}
 
-.intro h2{
-  font-weight: 700;
-  font-size: 2em;
-}
-
-.divider{
-  justify-content: center;
-
-}
-
-.divider_internal::before{
-  content: "";
-  position: absolute;
-  width: 250px;
-  height: 4px;
-  background-color: #24a7cf;
-}
 
 
 /*seccion de articulos*/
@@ -320,6 +297,41 @@ margin-top: 25px;
   100% {
     transform: translateX(0);
   }
+}
+
+.cierre{
+  justify-content: center;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 50px;
+margin-top: 25px;
+}
+
+.cierre h2{
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.divider{
+  justify-content: center;
+
+}
+
+.divider_internal::before{
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 4px;
+  background-color: #24a7cf;
+}
+
+
+#form-consulta{
+  box-shadow: 0px 0px 20px rgb(0, 225, 255);
+  background-image:url(assets/1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
 }
 
 
