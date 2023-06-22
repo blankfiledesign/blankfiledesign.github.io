@@ -114,8 +114,9 @@
      </p>
     </div>
 
-      <div class="btn-group floating-index col-md-2" role="group">
-        <button type="button" class="btn btn-info  dropdown-toggle fs-3 shadow-lg" data-bs-toggle="dropdown" aria-expanded="false">
+      <div class="btn-group floating-index col-md-2" role="group" id="floating-1">
+        <button type="button" class="btn btn-info  dropdown-toggle fs-3 shadow-lg" 
+        data-bs-toggle="dropdown" aria-expanded="false">
           indice general
         </button>
         <ul class="dropdown-menu fs-4 ">
@@ -222,12 +223,33 @@
   </div>
 </div>
 
-<section class="row py-6 p-5 justify-content-center " id="form-consulta" >
+<section class="row py-6 p-5 " id="form-consulta" >
+  <div class="startup col-md-3 floating-index" id="floating-2">
+  <p>
+    <button class="btn btn-info fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+      Ofertas para vos¡¡
+    </button>
+  </p>
+  <div >
+    <div class="collapse collapse-horizontal" id="collapseWidthExample">
+      <div class="card card-body" style="width: 250px;">
+        Si tenes o estas iniciando una StartUp pero no tenes presupuesto
+        para tu web, tenemos algo para vos¡
+        <a href="#" class="btn btn-info" style="margin-top: 15px;">click aqui</a>
+      </div>
+    </div>
+  </div>
+  </div>
 
-  <h2 class="text-center p-3">Deseas un presupuesto o sacarte alguna duda?</h2>
+<h2 class="text-center p-3">Deseas un presupuesto o sacarte alguna duda?</h2>
   <p class="text-center">
     Llena el formulario o comunicate por cualquiera de nuestros <a href="contacto.html">canales de contacto</a>
   </p>
+
+
+
+<div class="col-md-12">
+  
 
   <form action="https://formsubmit.co/moondesignweb@gmail.com" method="POST" 
   class="col-lg-6 col-sm-10 col-10 m-auto p-3 rounded form-color" id="formulario-consulta" >
@@ -235,7 +257,7 @@
     <div class="row">
       <div class="col-sm-6 col-12 mb-3">
        
-        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
+        <input type="text" class="form-control" name="Nombre" id="Nombre" placeholder="Nombre">
       </div>
 
       <div class="col mb-3">
@@ -246,11 +268,10 @@
     <div class="row">
       <div class="col-sm-6 col-12 mb-3">
        
-        <input type="text" class="form-control" name="telefono" id="telefono" placeholder="Telefono">
+        <input type="number" class="form-control" name="Telefono" id="Telefono" placeholder="Telefono">
       </div>
 
       <div class="col mb-3">
-  
         <select class="form-select" name="web" id="web">
           <option value="Tipo de web" name="Tipo de web" selected>Tipo de web</option>
           <option value="Landing" name="Landing">Landing</option>
@@ -265,11 +286,11 @@
     <div class="row">
       <div class="col-sm-6 col-12 mb-3">
        
-        <input type="number" class="form-control" name="puesto-seguridad" id="puesto-consulta" placeholder="Cantidad de secciones">
+        <input type="number" class="form-control" name="Secciones" id="Secciones" placeholder="Cantidad de secciones">
       </div>
 
       <div class="col mb-3">
-        <input type="text" class="form-control" name="horas-seguridad" id="horas-consulta" placeholder="Precio estimado">
+        <input type="text" class="form-control" name="Estimado" id="Estimado" placeholder="Precio estimado (Opcional)">
       </div>
     </div>
 
@@ -277,7 +298,7 @@
     <div class="row">
       <div class=" col-md-12 mb-3">
   
-        <textarea name=" mensaje "class="form-control" id="mensaje-seguridad" rows="3" placeholder="Cuentanos sobre tu proyecto:"> </textarea>
+        <textarea name=" Mensaje "class="form-control" id="Mensaje" rows="3" placeholder="Cuentanos sobre tu proyecto:"> </textarea>
       </div>
     </div>
 
@@ -287,6 +308,8 @@
       </div>
     </div>
   </form>
+</div>
+  
 </section>
 
 <footer class="footer row">

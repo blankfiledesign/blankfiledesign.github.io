@@ -340,16 +340,6 @@ nav {
 margin-top: 25px;
 }
 
-.floating-index {
-  position: fixed;
-  top: 15%;
-  right: 20px;
-  transform: translateY(-50%);
-  background-color: #00000000;
-  padding: 0px;
-  box-shadow: 0 2px 10px #24a7cf;
-  z-index: 49;
-}
 
 @media (max-width: 828px){
   .floating-index{
@@ -389,7 +379,6 @@ margin-top: 25px;
   }
 }
 
-
 @media (max-width:768px)
 {
   .divider_internal::before{
@@ -401,6 +390,35 @@ margin-top: 25px;
     background-color: #24a7cf;
   }
 }
+
+#floating-1 {
+  position: fixed;
+  top: 15%;
+  right: 20px;
+  transform: translateY(-50%);
+  background-color: #00000000;
+  padding: 0px;
+  box-shadow: 0 2px 10px #24a7cf;
+  z-index: 49;
+}
+
+.startup {
+  width: auto;
+  max-width: 177px;
+  border-radius: 5px;
+  height: 55px;
+  color: #000000;
+  position: fixed;
+  top: 42%;
+  left: 20px;
+  transform: translateY(-50%);
+  background-color: #00000000;
+  box-shadow: 0 2px 10px #24a7cf;
+  z-index: 49;
+  padding:0px;
+}
+
+
 #form-consulta{
   box-shadow: 0px 0px 20px rgb(0, 225, 255);
   background-image:url(assets/1.png);
