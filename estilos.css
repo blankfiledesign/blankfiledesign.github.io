@@ -45,7 +45,7 @@ nav {
 
 .navbar #inicio::after{
     content: "";
-    color: #a945c7;
+    color: #ffffff;
     position: absolute;
     left: 0;
     top:80%;
@@ -63,7 +63,7 @@ nav {
 
 .nav-item a::after{
     content: "";
-    background-color: #a945c7;
+    background-color: #ffffff;
     position: absolute;
     left: 0;
     top:80%;
@@ -99,13 +99,13 @@ nav {
   }
 
 .d-lg-none a:hover{
-  color: #a945c7;
+  color: #ffffff;
 }
 
 @media (max-width: 992px) {
     .nav-item a::after{
       content: "";
-      background-color: #a945c7;
+      background-color: #ffffff;
       position: absolute;
       left: 0;
       top:80%;
@@ -116,7 +116,7 @@ nav {
 
     .navbar #inicio::after{
       content: "";
-      color: #a945c7;
+      color: #ffffff;
        position: absolute;
        left: 0;
       top:80%;
@@ -129,7 +129,7 @@ nav {
 @media (max-width: 768px){
     .nav-item a::after{
       content: "";
-      background-color: #a945c7;
+      background-color: #ffffff;
       position: absolute;
       left: 0;
       top:80%;
@@ -139,7 +139,7 @@ nav {
 }
     .navbar #inicio::after{
       content: "";
-      color: #a945c7;
+      color: #ffffff;
       position: absolute;
       left: 0;
       top:80%;
