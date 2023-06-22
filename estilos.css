@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 1.5em; 
+    font-size: 20px; 
     font-weight: 300;
     
     
@@ -28,7 +28,7 @@ nav {
   }
   .navbar-toggler {
     border:none;
-    background-color: #ea00ffcc;
+    background-color:#45adc7;
   }
   .navbar-toggler:focus {
     outline: none;
@@ -142,6 +142,7 @@ nav {
   
   #bannertop h1{
     color: aqua;
+    
   }
 /*boton baner*/
 
@@ -247,18 +248,12 @@ nav {
 
 .caja img {
   border-radius: 25px ;
-  max-width: 80%;
-  height: auto;
-  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.603); 
-}
-
-
-.caja #seo{
-  border-radius: 25px ;
-  max-width: 80%;
+  max-width: 70%;
   height: auto;
   box-shadow: -8px 8px 15px rgba(0, 0, 0, 0.603); 
 }
+
+
 
 .animado{
   opacity: 0;
@@ -300,6 +295,27 @@ nav {
     transform: translateX(0);
   }
 }
+
+.intro{
+  justify-content: center;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 50px;
+margin-top: 25px;
+}
+
+.floating-index {
+  position: fixed;
+  top: 65%;
+  right: 20px;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 49;
+}
+
 
 .cierre{
   justify-content: center;

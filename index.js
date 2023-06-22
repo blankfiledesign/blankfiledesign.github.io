@@ -7,7 +7,7 @@ function mostrarScroll(){
    for (var i=0; i < animado.length; i++ ) {
     let alturaAnimado = animado[i].offsetTop;
 
-    if( alturaAnimado - 650 < scrollTop ){
+    if( alturaAnimado - 700 < scrollTop ){
         animado[i].style.opacity = 1;
 
 
@@ -31,7 +31,7 @@ function mostrarScrollD(){
    for (var i=0; i < animadoD.length; i++ ) {
     let alturaAnimadoD = animadoD[i].offsetTop;
 
-    if( alturaAnimadoD - 650 < scrollTop ){
+    if( alturaAnimadoD - 750 < scrollTop ){
         animadoD[i].style.opacity = 1;
 
         animadoD[i].classList.add("mostrarDerecha")
