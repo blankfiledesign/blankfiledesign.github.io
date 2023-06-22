@@ -150,7 +150,7 @@ nav {
   }
 
   #bannertop {
-    justify-content:center;
+    justify-content: center;
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.534)),
     url('assets/digitization.jpg');
