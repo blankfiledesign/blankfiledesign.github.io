@@ -306,16 +306,20 @@ margin-top: 25px;
 
 .floating-index {
   position: fixed;
-  top: 65%;
+  top: 15%;
   right: 20px;
   transform: translateY(-50%);
-  background-color: #ffffff;
-  padding: 10px;
-  border: 1px solid #dddddd;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #00000000;
+  padding: 0px;
+  box-shadow: 0 2px 10px #24a7cf;
   z-index: 49;
 }
 
+@media (max-width: 828px){
+  .floating-index{
+    display: none;
+  }
+}
 
 .cierre{
   justify-content: center;
