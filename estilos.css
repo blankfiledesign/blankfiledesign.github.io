@@ -271,7 +271,7 @@ nav {
   margin-bottom: 10px;
   margin-top: 10px;
 }
-.caja h2{
+.caja h2, h2{
  font-weight: 500;
  font-size: 2em;
 }
