@@ -53,10 +53,10 @@
             <ul class="navbar-nav fs-6 justify-content-end ">
               
               <li class="nav-item p-3 py-md-1">
-                <a href="" class="nav-link">INICIO</a>
+                <a href="" id="inicio" class="nav-link">INICIO</a>
               </li>
               <li class="nav-item p-3 py-md-1">
-                <a href="sobre-nosotros.html" class="nav-link">SERVICIOS</a>
+                <a href="#" class="nav-link">SERVICIOS</a>
               </li>
               <li class="nav-item p-3 py-md-1">
                 <a href="sobre-nosotros.html" class="nav-link">SOBRE NOSOTROS</a>
@@ -229,33 +229,33 @@
     Llena el formulario o comunicate por cualquiera de nuestros <a href="contacto.html">canales de contacto</a>
   </p>
 
-  <form action="https://formsubmit.co/moondesignweb@gmail.com" method="POST" class="col-lg-6 col-sm-10 col-10 m-auto p-3 rounded form-color" 
-  id="formulario-consulta" >
+  <form action="https://formsubmit.co/moondesignweb@gmail.com" method="POST" 
+  class="col-lg-6 col-sm-10 col-10 m-auto p-3 rounded form-color" id="formulario-consulta" >
 
     <div class="row">
       <div class="col-sm-6 col-12 mb-3">
        
-        <input type="text" class="form-control" name="nombre-seguridad" id="nombre-consulta" placeholder="Nombre">
+        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
       </div>
 
       <div class="col mb-3">
-        <input type="email" class="form-control" name="email-seguridad" id="email-consulta" placeholder="Email">
+        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
       </div>
     </div>
 
     <div class="row">
       <div class="col-sm-6 col-12 mb-3">
        
-        <input type="text" class="form-control" name="telefono-seguridad" id="telefono-consulta" placeholder="Telefono">
+        <input type="text" class="form-control" name="telefono" id="telefono" placeholder="Telefono">
       </div>
 
       <div class="col mb-3">
   
-        <select class="form-select" name="servicio" id="servicio">
-          <option value="Lugar de servicio" name="Lugar de servicio" selected>Tipo de web</option>
-          <option value="Edificio" name="Edificio">Landing</option>
-          <option value="housing o complejo habitacional" name="Housing o complejo habitacional">Estatica</option>
-          <option value="Fabrica" name="fabrica">E-comerce</option>
+        <select class="form-select" name="web" id="web">
+          <option value="Tipo de web" name="Tipo de web" selected>Tipo de web</option>
+          <option value="Landing" name="Landing">Landing</option>
+          <option value="Estatica" name="Estatica">Estatica</option>
+          <option value="E-comerce" name="E-comerce">E-comerce</option>
           <option value="Otro" name="otro">No se (Cuentanos en el area de texto)</option>
         </select>
     </div>
