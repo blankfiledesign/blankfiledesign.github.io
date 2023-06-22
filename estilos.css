@@ -14,38 +14,36 @@ body {
     width: 100%;
     z-index: 50;
     box-shadow: 0px 0px 8px rgb(0, 225, 255);
-
 }
 
 nav {
     background-color: #000000ea;
   }
 
-  .offcanvas{
+.offcanvas{
     width: 80% !important;
-    background-color: #000000;
-    
+    background-color: #000000;    
   }
-  .navbar-toggler {
+
+.navbar-toggler {
     border:none;
     background-color:#45adc7;
   }
-  .navbar-toggler:focus {
+.navbar-toggler:focus {
     outline: none;
     box-shadow: none;
    
   }
 
-  .nav-link{
+.nav-link{
     color: rgb(0, 217, 255);
-    
-
   }
 
-  .navbar #inicio{
+.navbar #inicio{
     color:#ffffff
   }
-  .navbar #inicio::after{
+
+.navbar #inicio::after{
     content: "";
     color: #a945c7;
     position: absolute;
@@ -56,11 +54,14 @@ nav {
     opacity: 1;
   }
 
-  .nav-item a{
+
+
+
+.nav-item a{
     position: relative;
   }
 
-  .nav-item a::after{
+.nav-item a::after{
     content: "";
     background-color: #a945c7;
     position: absolute;
@@ -71,28 +72,28 @@ nav {
     opacity: 0;
   }
 
-  .nav-link:hover::after{
+.nav-link:hover::after{
     opacity: 0.8;
     transition: all 0.6s ease 0s;
   }
 
-  .navbar-brand{
+.navbar-brand{
     color: rgb(0, 217, 255);
     }
 
-  .navbar-brand:hover,
-  .offcanvas-title:hover,
-  .nav-link:hover{
-    color: #a945c7;
+.navbar-brand:hover,
+.offcanvas-title:hover,
+.nav-link:hover{
+    color: #ffffff;
   }
  
-  .offcanvas-title{
+.offcanvas-title{
     font-size: 1.7em;
     color: #45adc7;
   }
 
 
-  .logo{
+.logo{
     width: 2.5em;
     border-radius: 50%;
   }
@@ -101,7 +102,7 @@ nav {
   color: #a945c7;
 }
 
-  @media (max-width: 992px) {
+@media (max-width: 992px) {
     .nav-item a::after{
       content: "";
       background-color: #a945c7;
@@ -112,9 +113,20 @@ nav {
       height: 4px;
       opacity: 0;
 }
+
+    .navbar #inicio::after{
+      content: "";
+      color: #a945c7;
+       position: absolute;
+       left: 0;
+      top:80%;
+      width: 32%;
+      height: 4px;
+      opacity: 1;
+}
   }
 
-  @media (max-width: 768px){
+@media (max-width: 768px){
     .nav-item a::after{
       content: "";
       background-color: #a945c7;
@@ -124,6 +136,16 @@ nav {
       width: 32%;
       height: 4px;
       opacity: 0;
+}
+    .navbar #inicio::after{
+      content: "";
+      color: #a945c7;
+      position: absolute;
+      left: 0;
+      top:80%;
+      width: 32%;
+      height: 4px;
+      opacity: 1;
 }
   }
 
