@@ -4,6 +4,7 @@ body {
   font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 20px; 
     font-weight: 300;
+    
     background-size: contain;
     background-repeat: no-repeat;    
 }
@@ -35,16 +36,16 @@ nav {
   }
 
 .nav-link{
-    color: rgb(0, 217, 255);
+    color: rgb(255, 255, 255);
   }
 
 .navbar #inicio{
-    color:#ffffff
+    color:#45adc7
   }
 
 .navbar #inicio::after{
     content: "";
-    color: #ffffff;
+    color:#45adc7;
     position: absolute;
     left: 0;
     top:80%;
@@ -62,7 +63,7 @@ nav {
 
 .nav-item a::after{
     content: "";
-    background-color: #ffffff;
+    background-color:#45adc7;
     position: absolute;
     left: 0;
     top:80%;
@@ -77,18 +78,18 @@ nav {
   }
 
 .navbar-brand{
-    color: rgb(0, 217, 255);
+    color: rgb(255, 255, 255);
     }
 
 .navbar-brand:hover,
 .offcanvas-title:hover,
 .nav-link:hover{
-    color: #ffffff;
+    color:#45adc7;
   }
  
 .offcanvas-title{
     font-size: 1.7em;
-    color: #45adc7;
+    color:#fff;
   }
 
 
@@ -104,7 +105,7 @@ nav {
 @media (max-width: 992px) {
     .nav-item a::after{
       content: "";
-      background-color: #ffffff;
+      background-color:#45adc7;
       position: absolute;
       left: 0;
       top:80%;
@@ -115,7 +116,7 @@ nav {
 
     .navbar #inicio::after{
       content: "";
-      color: #ffffff;
+      color:#45adc7;
        position: absolute;
        left: 0;
       top:80%;
@@ -128,7 +129,7 @@ nav {
 @media (max-width: 768px){
     .nav-item a::after{
       content: "";
-      background-color: #ffffff;
+      background-color:#45adc7;
       position: absolute;
       left: 0;
       top:80%;
@@ -149,7 +150,7 @@ nav {
   }
 
   #bannertop {
-    padding-top: 10%;
+    padding-top: 5%;
     padding-bottom: 10%;
     justify-content: center;
     background-color: #000000;
@@ -161,20 +162,33 @@ nav {
   }
 
 
-  #fondo {
+#fondo {
     text-align: center;
+    border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.67);
     margin-top: 100px;
-    
     padding-left: 10px;
-    padding-top: 50px;
+    padding-top: 150px;
     padding-bottom: 20px;
     color: #fff;
     font-size: 2em;
-    
+    box-shadow: 0px 0px 25px rgb(0, 225, 255);
+    width: 600px;
+    height: 600px;
+    animation: shadowEffect 2s infinite linear;
   }
 
-
+  @keyframes shadowEffect {
+    0% {
+      box-shadow: 0 0 15px rgba(0, 225, 225);
+    }
+    50% {
+      box-shadow: 0 0 35px rgba(0, 225, 225, 0.7);
+    }
+    100% {
+      box-shadow: 0 0 15px rgba(0, 225, 225 );
+    }
+  }
   
   #bannertop h1{
     color: aqua;
