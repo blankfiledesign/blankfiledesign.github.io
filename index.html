@@ -1,57 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Moon Design Web</title>
-    <!--boostrap-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous">
-    </script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"/>
-      
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear pagina web</title>
+
+    <!---bootstrap-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"/>
-    <link rel="stylesheet" href="estilos.css">
+
+    <!--estilos-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--icono de pagina-->
     <link rel="icon" href="assets/icono.ico">
-    
-  </head>
- 
-  <body class="container-fluid">
-
-    <header class="row position-relative  mb-5 rounded " id="header">
-      
-        <!-- MENU START  -->
-    <nav class="navbar navbar-expand-lg ">
-      <!-- NAV CONTAINER START -->
-      <div class="container-fluid">
-        <img  src="assets/icono.ico" alt="moon design" class="logo">
-
-        <a href="" class="navbar-brand fw-semibold fs-3">Moon Design</a>
+</head>
+<body class="container-fluid">
+    <header class="row position-relative mb-5 rounded" id="header">
+        <nav class="navbar navbar-expand-lg">  
+          <div class="container-fluid">
+            <img  src="assets/md.gif" alt="moon design" class="logo">
+            <a href="" class="navbar-brand fw-semibold fs-3">Moon Design</a>
         <!-- NAV BUTTON  -->
-        <button
-          class="navbar-toggler "
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#menuLateral"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral">
+            <span class="navbar-toggler-icon"></span>
+            </button>
         <!-- OFFCANVAS MAIN CONTAINER START -->
         <section class="offcanvas offcanvas-start" id="menuLateral" tabindex="-1">
           <div class="offcanvas-header" data-bs-theme="dark">
             <h3 class="offcanvas-title fs-3">Moon Design</h3>
-
             <button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="offcanvas"></button>
           </div>
           <!-- OFF CANVAS MENU LINKS  START-->
-          <div
-            class="offcanvas-body d-flex flex-column justify-content-between px-5"
-          >
+          <div class="offcanvas-body d-flex flex-column justify-content-between px-5">
             <ul class="navbar-nav fs-6 justify-content-end ">
-              
               <li class="nav-item p-3 py-md-1">
                 <a href="" id="inicio" class="nav-link">INICIO</a>
               </li>
@@ -78,16 +62,17 @@
             </div>
           </div>
         </section>
-        <!-- OFFCANVAS MAIN CONTAINER END  -->
-      </div>
-    </nav>
-
+          <!-- OFFCANVAS MAIN CONTAINER END  -->
+          </div>
+        </nav>
     </header>
+
 <main>
-<div class="row  " id="bannertop">
+    <!--baner-->
+    <div class="row  " id="bannertop">
         <div class="col-md-7 " id="fondo">
-        <h1>Paginas Web y Hosting en Cordoba</h1>
-        <h3 style="color: black;">crea tu pagina web</h3>
+        <h1>Paginas Web<br>Hosting en Cordoba</h1>
+        <h3 style="display:none;">crea tu pagina web</h3>
         <p> 
           Creamos y administramos tu sitio web para obtener juntos el mejor resultado
        </p>
@@ -96,237 +81,208 @@
           <span id="span2"></span>
           <span id="span3"></span>
           <span id="span4"></span>
-          HAZ CLICK AQUI
+          CLICK AQUI
       </a>
     </div> 
   </div>
 
-<div class="nada" id="titulo" ></div>
-  <section class="intro row" style="margin-top: 30px;">
+
+<div class="nada" id="titulo"></div>
+
+<!--texto introccion-->
+
+   <section class="intro row">
+
+
+
     <div id="intro" class="col-md-6">
-      <h2  class="">Tu sitio Web</h2>
+      <h2  class="">Las primeras impresiones son importantes</h2>
      <p>
       Un sitio web no es solo una revista llena de imagenes y textos, es la identificacion y la cara de tu empresa
-      en el mundo digital. En Moon Design nos enfocamos en puntos relevantes de cada rubro en particular,
+      en el mundo digital. En Moon Design nos enfocamos en los puntos relevantes de cada rubro en particular,
      entregando asi, un trabajo especifico para cada empresa pensado en aumentar la visibilidad de su producto o servicio.<br>
      Te contamos a continuacion algunos puntos importantes...
      </p>
     </div>
 
-      <div class="btn-group floating-index col-md-2" role="group" id="floating-1">
-        <button type="button" class="btn btn-info  dropdown-toggle fs-3 shadow-lg" 
-        data-bs-toggle="dropdown" aria-expanded="false">
-          indice general
-        </button>
-        <ul class="dropdown-menu fs-4 ">
-          <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-          <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-        </ul>
-      </div>
-      <!-- Índice flotante -->
-  </section> 
 
 
-<div class="row" id="divider">
-  <div class="divider col-md-4 offset-md-5">
-       <div class="divider_internal">
-       </div>
-  </div>
-</div>
+
+   </section> 
 
 
-<section>
-  <article class="articulo row" >
-    <div id="intro" class="caja animado col-md-6">
-     <h2>Diseño e Identidad</h2>
-     <p>
-      "Destaca en línea con un diseño web impactante. Nuestro equipo de diseñadores expertos 
-      creará una presencia digital única y atractiva que refleje la identidad de tu marca. 
-      Desde una interfaz intuitiva hasta una estética visual cautivadora, te ofrecemos una 
-      experiencia de usuario excepcional. Haz una primera impresión duradera 
-      y sobresale en la web".
-     </p>
-   </div>
-   <div id="img" class="caja animadoD col-md-5 col-sm-12 "  >
-     <img id="seo" src="assets/website-1624028_1280.png" alt="diseño web">
-   </div>
-   
- </article>
-  
- <article class="articulo1 row">
-  <div id="intro" class="caja animado  col-md-6">
-   <h2>Responsive Design</h2>
-   <p>
-    "Diseñamos tu sitio web para que se ajuste a todo tipo de dispositivo, 
-    ampliando asi la cantidad de usuarios que puedan acceder a tu producto y 
-    servicio sin perder la calidad y la fluidez de la navegacion.
-    Lo que se traduce a mas visitantes y futuros clientes".
-   </p>
-  
- </div>
- <div id="img" class="caja animadoD col-md-5 col-sm-12 "  >
-   <img  src="assets/responsive-1166833_1280.png" alt="diseño web">
- </div>
- 
-</article>
+<!--flayers-->
+
+<!--que ofrecemos-->
+
+<section class="flayers row">
 
 
-    <article class="articulo2 row">
-       <div id="intro" class="caja animado  col-md-6">
-        <h2>SEO y Posicionamiento web</h2>
-        <p>
-           "Potencia tu presencia en línea con nuestro servicio de SEO. 
-        Mejora tu visibilidad en los motores de búsqueda, atrae más tráfico cualificado 
-        y aumenta tu oportunidad de conversiones. Nuestro equipo de expertos implementará 
-        estrategias efectivas para posicionar tu sitio web en los 
-        primeros resultados de búsqueda. ¡Impulsa tu negocio en línea y alcanza nuevos 
-        horizontes!".
-        </p>
-       
-      </div>
-      <div id="img" class="caja animadoD col-md-5 col-sm-12 "  >
-        <img  src="assets/seo.png" alt="diseño web">
-      </div>
-      
+    <article class="articulo col-lg-3 col-md-3 col-sm-10">
+        <div class="caja animado">
+            <div class="text">
+               <h5 class="subtitle">
+                <small>
+                    Diseño e Identidad
+                </small>
+            </h5>  
+              <h2 class="title">Destaca en linea con un diseño impactante</h2>
+             <hr>
+             <div class="parrafo">
+                <p class="paragraph">
+                Crearemos una presencia digital única y atractiva que refleje la identidad de tu marca.
+                Desde una interfaz intuitiva hasta una estética visual cautivadora, 
+                te ofrecemos una experiencia de usuario excepcional. 
+              </p>
+             </div>
+              
+              
+            </div>
+          </div> 
     </article>
+
+    <article class="articulo1 col-lg-3 col-md-3 col-sm-10">
+        <div class="caja animadoA ">
+            <div class="text">
+              <h5 class="subtitle">
+                <small>
+                    Responsive Design
+                </small>
+            </h5>  
+              <h2 class="title">Tu sitio web en todos los dispositivos</h2>
+              <hr>
+              <p class="paragraph">
+                "Diseñamos tu sitio web para que se ajuste a todo tipo de dispositivo, 
+                ampliando asi la cantidad de usuarios que puedan acceder a tu producto 
+                y servicio sin perder la calidad y la fluidez de la navegacion. 
+                Lo que se traduce a mas visitantes y futuros clientes".
+              </p>
+              
+            </div>
+          </div> 
+    </article>   
+
+    <article class="articulo2 col-lg-3 col-md-3 col-sm-10">
+        <div class="caja animadoD ">
+            <div class="text">
+              <h5 class="subtitle">
+                <small>
+                    SEO y Posicionamiento web
+                </small>
+              </h5>  
+              <h2 class="title">Potencia tu presencia en todos los buscadores </h2>
+              <hr>
+              <p class="paragraph">
+                Mejora tu visibilidad en los motores de búsqueda, atrae más tráfico 
+                cualificado y aumenta tu oportunidad de conversiones. 
+                Implementaremos estrategias efectivas 
+                para posicionar tu sitio web en los primeros resultados de búsqueda. 
+              </p>
+              
+            </div>
+          </div> 
+     </article>
 </section>
 
-<div class="row" id="divider">
-  <div class="divider col-md-4 offset-md-5">
-       <div class="divider_internal">
-       </div>
-  </div>
-</div>
+<!--quienes somos-->
 
+<section class="nosotros row" >
 
-<section class="cierre row">
-  <div id="intro" class="col-md-6">
-    <h2 class="titulo">Moon Design</h2>
-   <p>
-    "Tu socio confiable en el mundo digital: Aprovecha nuestro 
-      expertise en crear sitios web modernos y receptivos que se adapten 
-      perfectamente a todos los dispositivos. 
-      Ya sea que necesites una web para tu startup, PYME o gran empresa, 
-      nuestro equipo de desarrolladores altamente capacitados está listo 
-      para materializar tu visión en una presencia digital impactante. 
-    ¡Impulsa tu negocio con una presencia en línea efectiva y atractiva!"
-   </p>
-      
-  </div>
-</section>
-
-<div class="row" id="divider">
-  <div class="divider col-md-4 offset-md-5">
-       <div class="divider_internal">
-       </div>
-  </div>
-</div>
-
-<section class="row py-6 p-5 " id="form-consulta" >
-  <div class="startup col-md-3 floating-index" id="floating-2">
-  <p>
-    <button class="btn btn-info fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-      !Ofertas para vos¡
-    </button>
-  </p>
-  <div >
-    <div class="collapse collapse-horizontal" id="collapseWidthExample">
-      <div class="card card-body" style="width: 250px;">
-        Si tenes o estas iniciando una StartUp pero no tenes presupuesto
-        para tu web, tenemos algo para vos¡
-        <a href="#" class="btn btn-info" style="margin-top: 15px;">click aqui</a>
-      </div>
+   <div class=" img col-md-4 offset-md-1 ">
+       <img src="assets/logos.gif" class="img-fluid" alt="">
+   </div>
+    <div class="texto offset-md-1 col-md-6" >
+        <div class="py-5 col-md-12">
+            <h3>
+                Sobre nosotros
+            </h3>
+            <h4>
+                ¿quienes somos?
+            </h4>
+            <p>
+            Somos una empresa de desarrollo web que nació con el propósito de ayudar a las 
+            pequeñas empresas a crear su presencia en línea. Con el tiempo, nuestra dedicación 
+            y experiencia nos han llevado a colaborar con grandes empresas, brindando soluciones
+             digitales de alto nivel. Aunque hemos crecido, nuestro enfoque en el éxito de nuestros 
+             clientes sigue siendo el mismo. Nuestro equipo de expertos está comprometido en 
+             proporcionar sitios web personalizados, intuitivos y atractivos que impulsen el 
+             crecimiento de tu negocio. Confía en nosotros para llevar tu presencia en línea al 
+             siguiente nivel, sin importar el tamaño de tu empresa.</p>
+        </div>
+        <div class="col-md-12" >
+            <h4>
+               Nos apasiona lo que hacemos
+            </h4>
+            <p>
+                Somos apasionados por lo que hacemos. Cada proyecto que asumimos es tratado con el mismo
+                 nivel de dedicación y compromiso como si fuera para nosotros mismos. 
+                 Nos enorgullece entregar resultados excepcionales, ya que comprendemos la importancia 
+                 de cada detalle para el éxito de tu negocio. Confía en nuestro equipo para brindarte 
+                 soluciones digitales personalizadas y sobrepasar tus expectativas. Tu éxito es nuestro
+                objetivo y nos esforzamos por lograrlo en cada proyecto que emprendemos.
+            </p>
+        </div>
     </div>
-
-    <div class="collapse collapse-horizontal" id="collapseWidthExample">
-      <div class="card card-body" style="width: 250px;">
-        No te gusta tu sitio web o no aparece en los resultados de busqueda y queres mejorarlo?  
-        <a href="#" class="btn btn-info" style="margin-top: 15px;">click aqui</a>
-      </div>
-    </div>
-  </div>
-  </div>
-
-<h2 class="text-center p-3">Deseas un presupuesto o sacarte alguna duda?</h2>
-  <p class="text-center">
-    Llena el formulario o comunicate por cualquiera de nuestros <a href="contacto.html">canales de contacto</a>
-  </p>
-
-
-
-<div class="col-md-12">
-  
-
-  <form action="https://formsubmit.co/moondesignweb@gmail.com" method="POST" 
-  class="col-lg-6 col-sm-10 col-10 m-auto p-3 rounded form-color" id="formulario-consulta" >
-
-    <div class="row">
-      <div class="col-sm-6 col-12 mb-3">
-       
-        <input type="text" class="form-control" name="Nombre" id="Nombre" placeholder="Nombre">
-      </div>
-
-      <div class="col mb-3">
-        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-6 col-12 mb-3">
-       
-        <input type="number" class="form-control" name="Telefono" id="Telefono" placeholder="Telefono">
-      </div>
-
-      <div class="col mb-3">
-        <select class="form-select" name="web" id="web">
-          <option value="Tipo de web" name="Tipo de web" selected>Tipo de web</option>
-          <option value="Landing" name="Landing">Landing</option>
-          <option value="Estatica" name="Estatica">Estatica</option>
-          <option value="E-comerce" name="E-comerce">E-comerce</option>
-          <option value="Otro" name="otro">No se (Cuentanos en el area de texto)</option>
-        </select>
-    </div>
-     
-    </div>
-
-    <div class="row">
-      <div class="col-sm-6 col-12 mb-3">
-       
-        <input type="number" class="form-control" name="Secciones" id="Secciones" placeholder="Cantidad de secciones">
-      </div>
-
-      <div class="col mb-3">
-        <input type="text" class="form-control" name="Estimado" id="Estimado" placeholder="Precio estimado (Opcional)">
-      </div>
-    </div>
-
-
-    <div class="row">
-      <div class=" col-md-12 mb-3">
-  
-        <textarea name=" Mensaje "class="form-control" id="Mensaje" rows="3" placeholder="Cuentanos sobre tu proyecto:"> </textarea>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-        <button type="submit" class="btn btn-dark w-100">Enviar</button>
-      </div>
-    </div>
-  </form>
-</div>
-  
-</section>
-
-<footer class="footer row">
-    <div class="copy col-md-12">
-      <p>
-        Copyright © moondesignweb.github.io Todos los derechos reservados | Diseñado por: moondesignweb.com
-      </p>
-    </div>
-</footer> 
     
-    </main>
-    <script src="index.js"></script>
-  </body>
+</section>
+
+<!--formulario consulta-->
+
+<section class="row " id="form-consulta" >
+
+
+    <h2 class="text-center p-3">Deseas un presupuesto o sacarte alguna duda?</h2>
+      <p class="text-center">
+        Llena el formulario o comunicate por cualquiera de nuestros <a href="contacto.html">canales de contacto</a>
+      </p>
+    
+<hr>
+   <div class="col-md-3 offset-md-2">
+    <img class="img-form" src="assets/una-imagen.jpg" alt="" style="width: 100%; max-width: 500px;">
+   </div> 
+  <div class="col-md-4 offset-md-2 ">
+      
+    <form action="https://formsubmit.co/moondesignweb@gmail.com" method="POST" 
+      class="col-md-10 col-sm-10 col-10 rounded form-color" id="formulario-consulta" >
+    
+        <div class="row">
+          <div class="col-md-12 mb-3">
+           
+            <input type="text" class="form-control" name="Nombre" id="Nombre" placeholder="Nombre">
+          </div>
+    
+          <div class="col-md-12 mb-3">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+          </div>
+
+          <div class="col-md-12 mb-3">
+            <input type="number" class="form-control" name="Telefono" id="Telefono" placeholder="Telefono">
+          </div>
+
+          <div class=" col-md-12 mb-3">
+            <textarea name=" Mensaje "class="form-control" id="Mensaje" rows="3" placeholder="Cuentanos sobre tu proyecto:"> </textarea>
+          </div>
+
+          <div class="col">
+            <button type="submit" class="btn btn-dark w-100">Enviar</button>
+          </div>
+        
+        </div>
+    </form>
+  </div>
+    
+      
+</section>
+    
+    <footer class="footer row">
+        <div class="copy col-md-12">
+          <p>
+            Copyright © moondesignweb.github.io Todos los derechos reservados | Diseñado por: moondesignweb.com
+          </p>
+        </div>
+    </footer> 
+ 
+</main>
+<script src="index.js"></script>
+</body>
 </html>
