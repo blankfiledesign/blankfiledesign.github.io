@@ -149,27 +149,29 @@ nav {
 /*baner */
 
 #bannertop {
-  padding-top: 5%;
-  padding-bottom: 10%;
+
+ 
   justify-content: center;
   background-color: #000000;
-  min-height: 100vh;
+  min-height: 83vh;
   background-image: 
-  
-  url(assets/baner-top.png);
-  background-repeat: repeat;
-  background-position: center;
+  linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.555)),
+  url(assets/baner-top.gif);
+  background-repeat: no-repeat;
+  background-position:center;
   background-size: contain;
   box-shadow: 0px 0px 8px rgb(0, 225, 255);
 }
 
 #bannertop h1{
   font-size: 51px;
+  
 }
 
 @media(max-width:600px){
   #bannertop{
-    padding-top: 30%;
+    padding-top: 15%;
+    min-height: 100vh;
   }
 }
 
@@ -178,7 +180,7 @@ nav {
   border-radius: 50%;
   background-position: center;
   background-image: 
-  linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.555)),
+  linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.418)),
   url(assets/luna-cyber-2.jpg);
   background-position: center;
   background-size: cover;
@@ -301,7 +303,8 @@ nav {
   background-color: rgb(26, 26, 26);
   justify-content: center;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 145px;
+  padding-bottom: 40px;
 }
 
 
@@ -309,7 +312,6 @@ nav {
   background-image: 
   linear-gradient(rgba(0, 30, 37, 0.918), rgba(22, 28, 31, 0.795)),
   url();
-  font-weight: 400;
   border-radius:25px ;
   border-top-left-radius:0;
   border-top-right-radius: 0;
@@ -335,8 +337,8 @@ padding-bottom: 100px;
   max-height: 600px;
   min-width: 250px;
   max-width: 420px;
-  padding-top: 15px;
-  margin: 5px;
+  padding-top: 20px;
+  padding-left: 25px;
 }
 
 .articulo {
