@@ -170,7 +170,7 @@ nav {
 
 @media(max-width:600px){
   #bannertop{
-    padding-top: 15%;
+    padding-top: 30%;
     min-height: 100vh;
   }
 }
@@ -197,7 +197,7 @@ nav {
 @media (max-width: 600px){
   #fondo{
       height: 500px;
-      padding-top:60px ;
+      padding-top:80px ;
   }
 }
   
