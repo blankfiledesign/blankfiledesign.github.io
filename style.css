@@ -11,7 +11,7 @@ body{
 }
 
 .logo{
-  width: 5em;
+  width: 3.5em;
   border-radius: 50%;
 }
 
@@ -162,6 +162,12 @@ nav {
 
 #bannertop h1{
   font-size: 51px;
+}
+
+@media(max-width:600px){
+  #bannertop{
+    padding-top: 30%;
+  }
 }
 
 #fondo {
