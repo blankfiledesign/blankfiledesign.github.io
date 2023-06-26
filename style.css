@@ -154,9 +154,12 @@ nav {
   justify-content: center;
   background-color: #000000;
   min-height: 100vh;
-  background-repeat: no-repeat;
+  background-image: 
+  
+  url(assets/baner-top.png);
+  background-repeat: repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   box-shadow: 0px 0px 8px rgb(0, 225, 255);
 }
 
