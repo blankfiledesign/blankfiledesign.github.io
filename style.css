@@ -1,6 +1,8 @@
 body{
   color: #fff;
   background-color: rgb(26, 26, 26);
+  font-family: 'Nunito Sans', sans-serif;
+  
 }
 
 #header{
@@ -8,6 +10,7 @@ body{
   width: 100%;
   z-index: 50;
   box-shadow: 0px 0px 8px rgb(0, 225, 255);
+  font-weight: 500;
 }
 
 .logo{
@@ -149,49 +152,37 @@ nav {
 /*baner */
 
 #bannertop {
-
- 
   justify-content: center;
   background-color: #000000;
-  min-height: 83vh;
-  background-image: 
-  linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.555)),
-  url(assets/baner-top.gif);
-  background-repeat: no-repeat;
-  background-position:center;
-  background-size: contain;
-  box-shadow: 0px 0px 8px rgb(0, 225, 255);
+  
 }
 
 #bannertop h1{
-  font-size: 51px;
-  
+  font-size: 3.8em;
+  font-weight: 600;
+  line-height: 1.2em;
+}
+
+#bannertop h3{
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.2em;
 }
 
 @media(max-width:600px){
   #bannertop{
-    padding-top: 30%;
+    padding-top: 20%;
     min-height: 100vh;
   }
 }
 
 #fondo {
   text-align: center;
-  border-radius: 50%;
-  background-position: center;
-  background-image: 
-  linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.418)),
-  url(assets/luna-cyber-2.jpg);
-  background-position: center;
-  background-size: cover;
   margin-top: 100px;
-  padding-top: 150px;
+  padding-top: 80px;
   padding-bottom: 20px;
-  font-size: 1.5em;
   box-shadow: 0px 0px 25px rgb(0, 225, 255);
-  width: 600px;
-  height: 600px;
-  animation: shadowEffect 2s infinite linear;
+  /* animation: shadowEffect 2s infinite linear; */
 }
 
 @media (max-width: 600px){
@@ -201,7 +192,7 @@ nav {
   }
 }
   
-
+/*
 
 @keyframes shadowEffect {
   0% {
@@ -214,10 +205,12 @@ nav {
     box-shadow: 0 0 15px rgba(0, 225, 225 );
   }
 }
+*/ 
 
 /*boton del baner*/
 
 .btn-neon {
+  margin-top: 50px;
   position: relative;
   display: inline-block;
   padding: 15px 30px;
@@ -292,11 +285,6 @@ nav {
   transition-delay: 0.75s;
 }
 
-/*indice flotante*/
-
-
-
-
 /*texto intri*/
 
 .intro{
@@ -323,7 +311,6 @@ nav {
 
 .flayers{
 background-color: rgb(26, 26, 26);
-justify-content: center;
 padding-bottom: 100px;
 }
 
@@ -333,18 +320,21 @@ padding-bottom: 100px;
 .articulo2{
   opacity: 0;
   transition: all 1.5s;
-  min-height: 400px;
-  max-height: 600px;
-  min-width: 250px;
-  max-width: 420px;
   padding-top: 20px;
   padding-left: 25px;
 }
 
+.articulo img,
+.articulo1 img,
+.articulo2 img{
+  height: 200px;
+  padding-left: 40px;
+}
+
+
 .articulo {
   background-image: 
-  linear-gradient(rgba(0, 30, 37, 0.918), rgba(22, 28, 31, 0.795)),
-  url(assets/website-1624028_1280.png);
+  linear-gradient(rgba(0, 30, 37, 0.959), rgba(0, 61, 94, 0.973)),url(assets/png/diseñamos-2.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -352,32 +342,22 @@ padding-bottom: 100px;
 
 .articulo1{
   background-image: 
-  linear-gradient(rgba(0, 30, 37, 0.918), rgba(22, 28, 31, 0.795)),
-  url(assets/responsivo.png);
+  linear-gradient(rgba(0, 30, 37, 0.959), rgba(0, 61, 94, 0.973)),url(assets/png/responsive-2.png);
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-
+ 
 .articulo2{
   background-image: 
-  linear-gradient(rgba(0, 30, 37, 0.918), rgba(22, 28, 31, 0.795)),
-  url(assets/seo.png);
+  linear-gradient(rgba(0, 30, 37, 0.959), rgba(0, 61, 94, 0.973)), url(assets/png/seo-1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.title {
-  font-size: 30px;
-  font-weight: bold;
-  
-}
 
-.subtitle {
-  font-size: 20px;
-  
-}
 
 .parrafo{
   display: block;
