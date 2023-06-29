@@ -480,10 +480,6 @@ justify-content: center;
 
 }
 
-form{
-  
-}
-
 input{
   color: #fff;
   background-color: #FBFBFB24;
@@ -492,10 +488,11 @@ input{
   width: 100%;
   margin-bottom: 10px;
   padding-left: 10px;
-  
+  outline: none;
+  border: none;
 }
 
-input:hover{
+*input:hover{
   border-color:#45adc7;
 }
 
@@ -505,8 +502,18 @@ textarea{
   height: 150px;
   background-color: #FBFBFB24;
   border-radius: 7px;
+  outline: none;
+  border: none;
 }
 
+form button{
+  background-color: #45adc7;
+  border: none;
+  border-radius: 7px;
+  width: 200px;
+  height: 60px;
+  margin-top: 10px;
+}
 /*footer*/
 
 .footer{
