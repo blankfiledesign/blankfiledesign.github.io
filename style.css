@@ -424,6 +424,7 @@ justify-content: center;
 
 .nosotros{
  background-color: #000000;
+ padding-right: 30px;
 }
 
 .nosotros img{
@@ -433,6 +434,12 @@ justify-content: center;
 
 .nosotros h4{
   color: #45adc7;
+}
+
+@media (max-width:600px){
+  .nosotros{
+    padding-right: 0px;
+  }
 }
 /*seccion formulario*/
 
