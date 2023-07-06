@@ -446,18 +446,29 @@ justify-content: center;
   }
 }
 
+
+/*seccion de trabajos*/
+
+
 .trabajos{
-  justify-content: center;
   padding: 50px 0 100px 0;
+  background-color: #1a1a1a;
 }
 
 
-
-#trabajos img{
+.trabajos img{
   box-shadow: 2px 4px 200px 200px rgba(23, 44, 48, 0.726);
 }
 
+.trabajos h5{
+  color: #45adc7;
+}
 
+
+.trabajos h3{
+  font-size: 2.5em;
+  font-weight: 700 !important;
+}
 /*seccion formulario*/
 
 #form-consulta{
