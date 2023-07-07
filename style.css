@@ -27,6 +27,7 @@ video{
     left: 0;
    
   }
+  
 }
 #header{
   position: fixed !important;
@@ -39,12 +40,15 @@ video{
 .logo{
   width: 3.5em;
   border-radius: 50%;
+  margin-left: 70px;
 }
+
 
 /*barra de navegacion lg*/
 
 nav {
   background-color: #000000ea;
+ 
 }
 
 .navbar #inicio{
@@ -146,6 +150,9 @@ nav {
     height: 4px;
     opacity: 1;
 }
+.logo{
+  margin-left: 10px;
+}
 }
 
 @media (max-width: 768px){
@@ -168,6 +175,9 @@ nav {
     width: 32%;
     height: 4px;
     opacity: 1;
+}
+.logo{
+  margin-left: 10px;
 }
 }
 
@@ -306,6 +316,7 @@ nav {
   text-align: center;
   padding-bottom: 40px;
   padding-top: 50px;
+  
 }
 
 
@@ -316,6 +327,7 @@ nav {
   border-radius:25px ;
   border-top-left-radius:0;
   border-top-right-radius: 0;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.781);
 }
 
 
@@ -326,6 +338,7 @@ nav {
 background-color: #1a1a1a;
 padding-bottom: 50px;
 justify-content: center;
+
 }
 
 /*seccion de flayer*/
@@ -337,7 +350,7 @@ justify-content: center;
   padding-top: 20px;
   padding-left: 25px;
   margin-bottom: 15px;
-  
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.781);
 }
 
 .articulo img,
@@ -429,6 +442,7 @@ justify-content: center;
 .nosotros{
  background-color: #000000;
  padding-right: 30px;
+ box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.781);
 }
 
 .nosotros img{
@@ -453,6 +467,7 @@ justify-content: center;
 .trabajos{
   padding: 50px 0 100px 0;
   background-color: #1a1a1a;
+  box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.781);
 }
 
 
@@ -507,6 +522,8 @@ justify-content: center;
 #form-consulta button{
   width: 100%;
   margin-left: 10px;
+  
+  
 
  }
 
@@ -522,6 +539,7 @@ input{
   padding-left: 10px;
   outline: none;
   border: none;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.781);
 }
 
 *input:hover{
@@ -536,6 +554,7 @@ textarea{
   border-radius: 7px;
   outline: none;
   border: none;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.781);
 }
 
 form button{
@@ -545,6 +564,7 @@ form button{
   width: 200px;
   height: 60px;
   margin-top: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.781);
 }
 
 /*footer*/
