@@ -484,15 +484,58 @@ justify-content: center;
   font-size: 2.5em;
   font-weight: 700 !important;
 }
+
+
+
+
+/*linktree*/
+
+
+
+
+
 /*seccion formulario*/
 
 #form-consulta{
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #1a1a1a;
+  padding-left: 15px;
   
   
 }
+
+#linktree{
+  border-radius: 7px;
+  padding-top: 47px;
+  
+  
+}
+
+
+.linkt{
+  width: 65%;
+  height: 60px;
+  font-size: 20px;
+  background-color: #FBFBFB24;
+  border-radius: 7px;
+  border: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  margin-bottom: 34px;
+  box-shadow: 0px 0px 8px rgb(0, 0, 0);
+}
+
+.linkt:hover{
+  background-color: #45adc7;
+  transform: scale(1.02);
+  transition-duration: 0.5s;
+  color:rgba(0, 0, 0, 0.63);
+  font-size: 20px;
+  border-color: #383838;
+}
+
+
 
 #form-consulta h3{
   font-size: 2.5em;
@@ -503,31 +546,6 @@ justify-content: center;
  color: #45adc7;
 }
 
-.img-form {
-   width: 400px;
-   padding-top: 40px;
-   
-}
-
-@media (max-width:600px){
-  .img-form {
-    width: 400px;
-    padding-top: 40px;
-    margin-left: 20px;
- }
-
- input,
- textarea,
- label,
-#form-consulta button{
-  width: 100%;
-  margin-left: 10px;
-  
-  
-
- }
-
-}
 
 input{
   color: #fff;
@@ -566,6 +584,36 @@ form button{
   margin-top: 10px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.781);
 }
+
+#formlink{
+  padding-left: 300px;
+}
+#formulario-consulta{
+  padding-top: 22px;
+}
+
+
+@media (max-width:850px){
+
+  input,
+  textarea,
+  label{
+    width: 100%;
+   margin-left: 10px;
+  }
+ #form-consulta button{
+   width: 100%;
+   margin-left: 10px;
+  }
+ 
+ #formlink{
+   padding-left: 0;
+ }
+ 
+ .linkt{
+   width: 100%;
+ }
+ }
 
 /*footer*/
 
