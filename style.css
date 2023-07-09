@@ -189,7 +189,7 @@ nav {
 
 #bannertop {
   justify-content: center;
-  min-height: 75vh;
+  min-height: 65vh;
   background-image: 
   url(assets/wave.svg);
  
@@ -319,9 +319,8 @@ nav {
   justify-content: center;
   text-align: center;
   padding-bottom: 40px;
-  padding-top: 50px;
-  
 }
+
 
 
 #intro{
@@ -332,6 +331,7 @@ nav {
   border-top-left-radius:0;
   border-top-right-radius: 0;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.781);
+  padding-top: 16px;
 }
 
 
@@ -484,7 +484,7 @@ justify-content: center;
 }
 
 
-.trabajos h3{
+ h3{
   font-size: 2.5em;
   font-weight: 700 !important;
 }
@@ -539,12 +539,6 @@ justify-content: center;
   border-color: #383838;
 }
 
-
-
-#form-consulta h3{
-  font-size: 2.5em;
-  font-weight: 700 !important;
-}
 
 #form-consulta h5{
  color: #45adc7;
@@ -616,6 +610,11 @@ form button{
  
  .linkt{
    width: 100%;
+ }
+
+ h3{
+  font-size: 1.8em;
+  font-weight: 700 !important;
  }
  }
 
