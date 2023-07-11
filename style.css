@@ -317,7 +317,9 @@ nav {
   padding-bottom: 40px;
 }
 
-
+.inicio{
+  opacity: 1;
+}
 
 #intro{
   background-image: 
@@ -353,11 +355,16 @@ justify-content: center;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.781);
 }
 
+.about,
+.aboutimg{
+  opacity: 0;
+}
+
 .articulo img,
 .articulo1 img,
 .articulo2 img{
-  height: 200px;
-  padding-left: 40px;
+  height: 250px;
+  padding-left: 10px;
 }
 
 
@@ -439,6 +446,19 @@ justify-content: center;
   }
 }
 
+.mostrarArriba{
+  animation: mostrarArriba 1.5S;
+}
+
+@keyframes mostrarArriba {
+  0% {
+      transform: translateY(-150px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
 .nosotros{
  background-color: #000000;
  padding-right: 30px;
@@ -488,8 +508,11 @@ h5{
 
 
 
-/*linktree*/
+/*hablemos*/
 
+#hablemos{
+  background-color: #000000;
+}
 
 
 
@@ -497,24 +520,19 @@ h5{
 /*seccion formulario*/
 
 #form-consulta{
-  padding-top: 50px;
-  padding-bottom: 50px;
+  
   background-color: #1a1a1a;
-  padding-left: 15px;
   
   
 }
 
 #linktree{
-  border-radius: 7px;
-  padding-top: 47px;
-  
-  
+  padding-top: 46px;
 }
 
 
 .linkt{
-  width: 65%;
+  width: 100%;
   height: 60px;
   font-size: 20px;
   background-color: #FBFBFB24;
@@ -532,12 +550,7 @@ h5{
   transition-duration: 0.5s;
   color:rgba(0, 0, 0, 0.63);
   font-size: 20px;
-  border-color: #383838;
-}
-
-
-#form-consulta h5{
- color: #45adc7;
+  
 }
 
 
@@ -554,9 +567,6 @@ input{
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.781);
 }
 
-*input:hover{
-  border-color:#45adc7;
-}
 
 textarea{
   color: #fff;
@@ -573,17 +583,15 @@ form button{
   background-color: #45adc7;
   border: none;
   border-radius: 7px;
-  width: 200px;
+  width: 150px;
   height: 60px;
   margin-top: 10px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.781);
 }
 
-#formlink{
-  padding-left: 300px;
-}
 #formulario-consulta{
   padding-top: 22px;
+  padding-bottom: 22px;
 }
 
 
@@ -592,20 +600,15 @@ form button{
   input,
   textarea,
   label{
-    width: 100%;
-   margin-left: 10px;
+    *width: 100%;
   }
  #form-consulta button{
-   width: 100%;
-   margin-left: 10px;
+   
   }
  
- #formlink{
-   padding-left: 0;
- }
  
  .linkt{
-   width: 100%;
+   *width: 100%;
  }
 
  h3{

@@ -1,3 +1,4 @@
+
 let articulo = document.querySelectorAll(".articulo");
 
 function mostrarScroll(){
@@ -7,7 +8,7 @@ function mostrarScroll(){
    for (var i=0; i < articulo.length; i++ ) {
     let alturaAnimado = articulo[i].offsetTop;
 
-    if( alturaAnimado - 900 < scrollTop ){
+    if( alturaAnimado - 950 < scrollTop ){
         articulo[i].style.opacity = 1;
 
 
@@ -31,7 +32,7 @@ function mostrarScrollD(){
    for (var i=0; i < articulo2.length; i++ ) {
     let alturaAnimadoD = articulo2[i].offsetTop;
 
-    if( alturaAnimadoD - 900 < scrollTop ){
+    if( alturaAnimadoD - 950 < scrollTop ){
         articulo2[i].style.opacity = 1;
 
         articulo2[i].classList.add("mostrarDerecha")
@@ -53,7 +54,7 @@ function mostrarScrollA(){
    for (var i=0; i < articulo1.length; i++ ) {
     let alturaAnimadoA = articulo1[i].offsetTop;
 
-    if( alturaAnimadoA - 900 < scrollTop ){
+    if( alturaAnimadoA - 950 < scrollTop ){
         articulo1[i].style.opacity = 1;
 
         articulo1[i].classList.add("mostrarAbajo")
@@ -62,3 +63,51 @@ function mostrarScrollA(){
 }
 
 window.addEventListener('scroll', mostrarScrollA);
+
+
+/*abajo a arriba about*/
+
+let about = document.querySelectorAll(".about");
+
+function mostrarScrollAa(){
+
+   let scrollTop = document.documentElement.scrollTop;
+
+   for (var i=0; i < about.length; i++ ) {
+    let alturaAnimadoAa = about[i].offsetTop;
+
+    if( alturaAnimadoAa - 700 < scrollTop ){
+        about[i].style.opacity = 1;
+
+        about[i].classList.add("mostrarAbajo")
+    }
+   }
+}
+
+window.addEventListener('scroll', mostrarScrollAa);
+
+/*img about*/
+
+
+let aboutimg = document.querySelectorAll(".aboutimg");
+
+function mostrarScrollImg(){
+
+   let scrollTop = document.documentElement.scrollTop;
+
+   for (var i=0; i < aboutimg.length; i++ ) {
+    let alturaAnimadoAa = aboutimg[i].offsetTop;
+
+    if( alturaAnimadoAa - 900 < scrollTop ){
+        aboutimg[i].style.opacity = 1;
+
+        aboutimg[i].classList.add("mostrarIzquierda")
+    }
+   }
+}
+
+window.addEventListener('scroll', mostrarScrollImg);
+
+
+/*mostrar*/
+

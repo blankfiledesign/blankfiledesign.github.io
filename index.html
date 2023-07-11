@@ -122,7 +122,7 @@
         <h3> 
           Creamos y administramos tu sitio web para obtener juntos el mejor resultado
         </h3>
-        <a href="#form-consulta" class=" rounded btn-neon">
+        <a href="#hablemos" class=" rounded btn-neon">
           <span id="span1"></span>
           <span id="span2"></span>
           <span id="span3"></span>
@@ -142,7 +142,7 @@
 
    <section class="intro row" id="">
 
-    <div id="intro" class="col-md-8">
+    <div id="intro" class="inicio col-md-8">
       <h2  class="">Las primeras impresiones son importantes</h2>
      <p>
       Un sitio web no es solo una revista llena de imagenes y textos, es la identificacion y la cara de tu empresa
@@ -165,7 +165,6 @@
 
 
     <article class="articulo  col-lg-3 col-md-4 col-sm-12">
-        <div class="">
             <div class="text">
                <h5 class="subtitle">
                 <small>
@@ -174,7 +173,7 @@
             </h5>  
               <h4 class="title">Destaca en linea con un diseño impactante</h4>
              
-             <img class="" src="assets/png/diseñamos-2.png" alt="">
+             <img class="img-fluid" src="assets/png/diseñamos-2.png" alt="">
              <div class="parrafo">
                 <p class="paragraph">
                 Crearemos una presencia digital única y atractiva que refleje 
@@ -182,14 +181,10 @@
                 Una interfaz intuitiva y de estética visual cautivadora.
               </p>
              </div>
-              
-              
             </div>
-          </div> 
     </article>
 
     <article class="articulo1 col-lg-3 col-md-4 col-sm-12">
-        <div class="">
             <div class="text">
               <h5 class="subtitle">
                 <small>
@@ -198,7 +193,7 @@
             </h5>  
               <h4 class="title">Tu sitio web en todos los dispositivos</h4>
               
-              <img class="" src="assets/png/responsive-2.png" alt="">
+              <img class="img-fluid" src="assets/png/responsive-2.png" alt="">
               <p class="paragraph">
                 Diseñamos tu web para que se ajuste a todos los dispositivos, 
                 sin perder la calidad y la fluidez de la navegacion. 
@@ -206,11 +201,9 @@
               </p>
               
             </div>
-          </div> 
     </article>   
 
     <article class="articulo2 col-lg-3 col-md-4 col-sm-12">
-        <div class="">
             <div class="text">
               <h5 class="subtitle">
                 <small>
@@ -218,27 +211,26 @@
                 </small>
               </h5>  
               <h4 class="title">Potencia tu presencia en todos los buscadores </h4>
-              <img class="" src="assets/png/seo-3.png" alt="">
+              <img class="img-fluid" src="assets/png/seo-3.png" alt="">
               <p class="paragraph">
                 Implementamos estrategias efectivas para posicionar tu sitio en los
                 primeros resultados de busqueda. Atrae mas trafico y aumenta las oportunidades.
               </p>
               
             </div>
-          </div> 
      </article>
 </section>
 
 
 <!--quienes somos-->
 <a name="about"></a>
-<section class="nosotros row py-5" id="">
+<section class="nosotros row py-5" id="about">
 
-   <div class=" img col-md-5 offset-md-1 ">
+   <div class="aboutimg img col-md-5 offset-md-1 ">
        <img src="assets/iconos nuevos/bf about degrade mas chico.gif" class="img-fluid" alt="">
    </div>
     <div class="texto col-md-6" >
-        <div class=" col-md-12 py-5">
+        <div class="about col-md-12 py-5">
             <h3>
                 Sobre nosotros
             </h3>
@@ -254,7 +246,7 @@
              proporcionar sitios web personalizados, intuitivos y atractivos que impulsen el 
              crecimiento de tu negocio. </p>
         </div>
-        <div class="col-md-12 py-5" >
+        <div class="about col-md-12 py-5" >
             <h4>
                Nos apasiona lo que hacemos
             </h4>
@@ -317,8 +309,8 @@
 </section>
 
 
-<!--formulario consulta-->
-<div class=" col-lg-12 col-md-12 pt-5">
+<section class="row">
+<div class=" col-lg-12 col-md-12 pt-5" id="hablemos">
   <h5>Hablemos</h5>
       <h3>
         ¿Tienes un proyecto<br> en mente?</h3>
@@ -328,64 +320,61 @@
         </p>
          
 </div>
+</section>
 
-<section class="row" id="form-consulta">
 
+<!--formulario consulta-->
 
-    
-      
-    
-<div class="row" id="formlink">
+<section class="row" id="form-consulta" >
 
     <form action="https://formsubmit.co/blankfile.contact@gmail.com" method="POST"  
-    class=" col-md-6 " id="formulario-consulta">
+    class="col-md-6 " id="formulario-consulta" >
       
-      <div class="col-md-8"> 
+      <div class="offset-md-1 col-md-10"> 
         <label for="name"> Nombre</label>
         <input type="text"  name="Nombre" id="Nombre" placeholder="">
       </div>
 
-      <div class="col-md-8"> 
+      <div class="offset-md-1 col-md-10"> 
         <label for="email"> Email</label>
         <input type="email" name="email" id="email" placeholder="">
       </div>
 
-      <div class="col-md-8">
+      <div class="offset-md-1 col-md-10">
         <label for="number"> Telefono</label>
         <input type="number" name="Telefono" id="Telefono" placeholder="">
       </div>
 
-      <div class="col-md-8">
+      <div class="offset-md-1 col-md-10">
         <label for="mensaje"> Mensaje</label>
         <textarea name=" Mensaje " id="Mensaje"  placeholder="Cuentanos sobre tu proyecto:"> </textarea>
       </div>
 
       <div >
-        <button type="submit">ENVIAR MENSAJE</button>
+        <button class="offset-md-1 col-md-4" type="submit">ENVIAR</button>
       </div>
 
     </form>
 
-    
-
-<div class="  col-md-6  " id="linktree">
+    <div class="col-md-6">
+<div class="offset-md-1 col-md-10" id="linktree" >
 
 
   <a href="https://api.whatsapp.com/send?phone=+5493521531997&amp;text= Quiero mi pagina web : "
   target="_blank"><button class="linkt">Whatsapp</button></a>
   <a href="mailto:officeomega.adm@gmail.com"><button class="linkt">E mail 1</button></a>
-  <a href="mailto:omega_seguridad@yahoo.com"><button class="linkt">E mail 2</button></a>
-  <a href="tel:+5493521531997" target="_blank" rel="noopener noreferrer"><button class="linkt">Celular</button></a>
+  <a href="mailto:omega_seguridad@yahoo.com"><button class=" linkt">E mail 2</button></a>
+  <a href="tel:+5493521531997" target="_blank" rel="noopener noreferrer"><button class=" linkt">Celular</button></a>
   <a id="lfijo" href="tel:+5493514883010" target="_blank" rel="noopener noreferrer" ><button class="linkt">Fijo</button></a>
 </div> 
 
-</div>
-
-  
+    </div>
 
 
-      
+
 </section>
+
+
     
     <footer class="footer row">
         <div class="copy col-md-12">
