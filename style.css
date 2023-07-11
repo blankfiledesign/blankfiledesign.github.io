@@ -42,10 +42,9 @@ video{
 }
 
 .logo{
-  width: 3.5em;
-  border-radius: 50%;
-  margin-left: 70px;
+  width: 8em;
 }
+
 
 
 /*barra de navegacion lg*/
@@ -107,8 +106,7 @@ nav {
 }
 
 .navbar-brand{
-  color: rgb(255, 255, 255);
-  padding-left: 25px;
+  padding-left: 60px;
 }
 
 .offcanvas{
@@ -121,7 +119,6 @@ nav {
   color:#fff;
 }
 
-.navbar-brand:hover,
 .offcanvas-title:hover,
 .nav-link:hover{
   color:#45adc7;
@@ -154,9 +151,7 @@ nav {
     height: 4px;
     opacity: 1;
 }
-.logo{
-  margin-left: 10px;
-}
+
 }
 
 @media (max-width: 768px){
@@ -180,8 +175,9 @@ nav {
     height: 4px;
     opacity: 1;
 }
-.logo{
-  margin-left: 10px;
+
+.navbar-brand{
+  padding-left: 0px;
 }
 }
 
@@ -616,6 +612,10 @@ form button{
   font-size: 1.8em;
   font-weight: 700 !important;
  }
+
+ .navbar-brand{
+  padding-left: 0px;
+}
  }
 
 /*footer*/
