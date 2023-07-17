@@ -236,11 +236,12 @@ nav {
 
 .btn-neon {
   margin-top: 50px;
+  margin: 50px;
   position: relative;
   display: inline-block;
   padding: 15px 30px;
   color: #fff;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   text-decoration: none;
   font-size: 24px;
   overflow: hidden;
@@ -250,9 +251,9 @@ nav {
 
 .btn-neon:hover{
   background: #45adc7 ;
-  box-shadow: 0 0 10px #45adc7, 0 0 40px #45adc7, 0 0 80px #a945c7 !important;
+  box-shadow: 0 0 10px #45adc7, 0 0 40px #45adc7, 0 0 80px #bbbbbb !important;
   transition-delay: 1s;
-  color: #a945c7;
+  color: #000000;
 }
 
 .btn-neon span{
@@ -265,7 +266,7 @@ nav {
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent,#45adc7);
+  background: linear-gradient(90deg, transparent,#bbbbbb);
 }
 
 .btn-neon:hover #span1{
@@ -278,7 +279,7 @@ nav {
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent,#a945c7);
+  background: linear-gradient(270deg, transparent,#bbbbbb);
 }
 .btn-neon:hover #span3{
   right: 100%;
@@ -290,7 +291,7 @@ nav {
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg,transparent,#a945c7);
+  background: linear-gradient(180deg,transparent,#bbbbbb);
 }
 .btn-neon:hover #span2{
   top: 100%;
@@ -302,7 +303,7 @@ nav {
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg,transparent,#a945c7);
+  background: linear-gradient(360deg,transparent,#bbbbbb);
 }
 .btn-neon:hover #span4{
   bottom: 100%;
@@ -317,11 +318,10 @@ nav {
   justify-content: center;
   text-align: center;
   padding-bottom: 40px;
+  padding-top: 100px;
 }
 
-.inicio{
-  opacity: 1;
-}
+
 
 #intro{
   background-image: 
