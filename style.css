@@ -185,13 +185,15 @@ nav {
 
 #bannertop {
   justify-content: center;
-  min-height: 65vh;
+  padding-top: 15vh;
   background-image: 
-  url(assets/wave.svg);
- 
+  linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.404)),
+  url(assets/block.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position:bottom;
-  padding-top: 5px;
+  height: 100vh;
+  color: #fff;
+
   
 }
 
@@ -602,11 +604,7 @@ form button{
   label{
     *width: 100%;
   }
- #form-consulta button{
-   
-  }
- 
- 
+
  .linkt{
    *width: 100%;
  }
