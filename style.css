@@ -463,7 +463,7 @@ h5{
 /*hablemos*/
 
 #hablemos{
-  background-color: #000000;
+  background-color: #1a1a1a;
 }
 
 
@@ -498,7 +498,7 @@ h5{
 
 .linkt:hover{
   background-color: #45adc7;
-  transform: scale(1.02);
+  transform: scale(1.01);
   transition-duration: 0.5s;
   color:rgba(0, 0, 0, 0.63);
   font-size: 20px;
@@ -539,7 +539,16 @@ form button{
   height: 60px;
   margin-top: 10px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.781);
+  color:#fff
 }
+
+form button:hover{
+  transform: scale(1.01);
+  transition-duration: 0.2s;
+  color:#000000;
+  
+}
+
 
 #formulario-consulta{
   padding-top: 22px;
@@ -548,16 +557,6 @@ form button{
 
 
 @media (max-width:850px){
-
-  input,
-  textarea,
-  label{
-    *width: 100%;
-  }
-
- .linkt{
-   *width: 100%;
- }
 
  h3{
   font-size: 1.8em;
@@ -571,12 +570,19 @@ form button{
 
 /*footer*/
 
-.footer{
-  background-color: #000000de;
+footer{
+  background-color: #000000;
   color:#ffffff;
+  font-size: 16px;
+
+}
+
+footer img{
+  width: 10em;
+}
+
+.copyright{
+  
   text-align: center;
   align-content: center;
-  min-height: 3em;
-  font-size: 16px;
-  padding-top: 20px;
 }
