@@ -4,7 +4,21 @@
     box-sizing: border-box;
   }
   
-  
+  input, textarea {
+    caret-color:#45adc7;
+  }
+
+  *::selection {
+    background-color:#45adc7;
+    color:#fff;
+}
+ 
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
   body{
     color: #fff;
     font-family: 'Nunito', sans-serif;
@@ -27,7 +41,7 @@
     width: 100%;
     z-index: 10;
     font-weight: 400;
-    transition: 0.5s linear 0.1s;
+    transition: 1.1s linear 0.1s;
   }
   
 
@@ -418,6 +432,10 @@
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.781);
 }
 
+.nos hr{
+  width: 60%;
+    color: #45adc7;
+}
 /*works*/
 
 .work{
@@ -438,7 +456,7 @@
   }
   
   .trabajos hr{
-    width: 60%;
+    width: 70%;
     color: #45adc7;
   }
   
@@ -448,6 +466,10 @@
     background-color: #1a1a1a;
 }
 
+.hablemos hr{
+  width: 50%;
+    color: #45adc7;
+}
 /*formulario*/
 
 .formu{
@@ -493,8 +515,7 @@ textarea{
   form button:hover{
     transform: scale(1.01);
     transition-duration: 0.2s;
-    color:#000000;
-    
+    background-color: #1a1a1a;
   }
   
   #formulario-consulta{
@@ -547,7 +568,7 @@ textarea{
   
   h3{
     font-size: 2.5em;
-  font-weight: 700 !important;
+    font-weight: 700 !important;
   }
 
   h4, h5{
@@ -555,6 +576,12 @@ textarea{
   }
 
 hr{
-    width: 60%;
+    width: 50%;
     color: #45adc7;
+}
+
+@media (max-width: 600px) {
+  h3{
+    font-size: 2.1em;
+  }
 }
