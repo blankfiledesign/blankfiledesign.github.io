@@ -1,18 +1,18 @@
 
-let articulo = document.querySelectorAll(".articulo");
+let izq = document.querySelectorAll(".izq");
 
 function mostrarScroll(){
 
    let scrollTop = document.documentElement.scrollTop;
 
-   for (var i=0; i < articulo.length; i++ ) {
-    let alturaAnimado = articulo[i].offsetTop;
+   for (var i=0; i < izq.length; i++ ) {
+    let alturaAnimado = izq[i].offsetTop;
 
     if( alturaAnimado - 950 < scrollTop ){
-        articulo[i].style.opacity = 1;
+        izq[i].style.opacity = 1;
 
 
-        articulo[i].classList.add("mostrarIzquierda")
+        izq[i].classList.add("mostrarIzquierda")
     }
    }
 }
