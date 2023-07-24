@@ -186,6 +186,10 @@ input[type=number]::-webkit-outer-spin-button {
    
     #bannertop h1{
       font-size: 2.5em;
+
+    }
+    #bannertop{
+      padding-top: 5vh;
     }
   }
   
@@ -194,8 +198,6 @@ input[type=number]::-webkit-outer-spin-button {
     margin-top: 100px;
     margin-bottom: 180px;
     padding-top: 80px;
-  
-    
   }
   
     
@@ -578,8 +580,12 @@ textarea{
 hr{
     width: 50%;
     color: #45adc7;
+    opacity: 1;
 }
 
+.intro hr{
+  margin-left: 25%;
+}
 @media (max-width: 600px) {
   h3{
     font-size: 2.1em;
