@@ -19,6 +19,8 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none; 
   margin: 0; 
 }
+
+
   body{
     color: #fff;
     font-family: 'Nunito', sans-serif;
@@ -152,20 +154,20 @@ input[type=number]::-webkit-outer-spin-button {
 }
 }
 
+#particles-js{
+  background-color: #000000;
+  position: fixed;
+  height: 100vh;
+  z-index: -1;
+}
+
 /*baner */
 
 #bannertop {
     justify-content: center;
     padding-top: 15vh;
-    background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.404)),
-    url(assets/block.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     height: 100vh;
     color: #fff;
-  
-    
   }
   
   
@@ -554,7 +556,7 @@ textarea{
   
   /*footer*/
 
-  .foot{
+  .footer{
     background-color: #000000;
   }
 
@@ -563,7 +565,7 @@ textarea{
   }
   
   .copyright{
-  
+    
     text-align: center;
     align-content: center;
   }
