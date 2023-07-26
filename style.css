@@ -25,6 +25,7 @@ input[type=number]::-webkit-outer-spin-button {
     color: #fff;
     font-family: 'Nunito', sans-serif;
     background-color: #000000;
+    
   }
   
   body::-webkit-scrollbar{
@@ -37,13 +38,35 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 5px;
   }
   
+  .cursor-dot{
+    width: 5px;
+    height: 5px;
+    background-color: #45adc7;
+  }
+
+  .cursor-outline{
+    width: 30px;
+    height: 30px;
+    border: 1px solid hsl(189, 100%, 50%); 
+  }
+
+  .cursor-dot,
+  .cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 15;
+    pointer-events: none;
+  }
 
   #header{
     position: fixed !important;
     width: 100%;
     z-index: 10;
     font-weight: 400;
-    transition: 1.1s linear 0.1s;
+    transition: 0.6s linear 0.1s;
   }
   
 
@@ -152,13 +175,6 @@ input[type=number]::-webkit-outer-spin-button {
 .navbar-brand{
   padding-left: 0px;
 }
-}
-
-#particles-js{
-  background-color: #000000;
-  position: fixed;
-  height: 100vh;
-  z-index: -1;
 }
 
 /*baner */
@@ -285,7 +301,7 @@ input[type=number]::-webkit-outer-spin-button {
   /*intro*/ 
 
  .intro{
-  background-color: #1a1a1a;
+  background-color: #161616;
   padding-bottom: 40px;
   padding-top: 100px;
   text-align: center;
@@ -299,7 +315,7 @@ input[type=number]::-webkit-outer-spin-button {
  /*flayers*/
 
  .flayers{
-    background-color: rgb(26, 26, 26);
+  background-color: #161616;
     padding-bottom: 50px; 
  }
 
@@ -467,7 +483,7 @@ input[type=number]::-webkit-outer-spin-button {
 /*hablemos*/ 
 
 .hablemos{
-    background-color: #1a1a1a;
+  background-color: #161616;
 }
 
 .hablemos hr{
@@ -477,7 +493,7 @@ input[type=number]::-webkit-outer-spin-button {
 /*formulario*/
 
 .formu{
-    background-color: #1a1a1a;
+  background-color: #161616;
 }
 
 input{
@@ -594,40 +610,3 @@ hr{
   }
 }
 
-/*cursor*/
-
-.cursor{
-  position: fixed;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #45adc7;
-  border-radius: 50%;
-  left: 0;
-  top: 0;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  transition: .05s;
-}
-
-.cursor2{
-  position: fixed;
-  width: 6px;
-  height: 6px;
-  background-color: #45adc7;
-  border-radius: 50%;
-  left: 0;
-  top: 0;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  transition: 0s;
-}
-
-.content:hover ~ .cursor{
-  transform: translate(-50%, -50%) scale(1.5);
-  background-color: #c6c6c6;
-  opacity: .5;
-}
-
-.content:hover ~ .cursor2{
-  opacity: 0;
-}
