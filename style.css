@@ -329,6 +329,18 @@ input[type=number]::-webkit-outer-spin-button {
     color: #fff;
  }
 
+.hide,
+.hide2,
+.hide3{
+  display: none;
+}
+
+.show,
+.show2,
+.show3{
+  display: block;
+}
+
 .articulo,
 .articulo1,
 .articulo2{
@@ -336,7 +348,7 @@ input[type=number]::-webkit-outer-spin-button {
   transition: all 1.5s;
   padding-top: 20px;
   padding-left: 25px;
-  margin-bottom: 15px;
+  min-width: 360px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.781);
 }
 
@@ -356,7 +368,7 @@ input[type=number]::-webkit-outer-spin-button {
 .articulo {
   background-image: 
   linear-gradient(rgba(0, 30, 37, 0.959), rgba(0, 61, 94, 0.973)),url(assets/diseñamos-2.png);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -365,15 +377,15 @@ input[type=number]::-webkit-outer-spin-button {
   background-image: 
   linear-gradient(rgba(0, 30, 37, 0.959), rgba(0, 61, 94, 0.973)),url(assets/responsive-2.png);
 
-  background-size: cover;
+  background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
 }
  
 .articulo2{
   background-image: 
-  linear-gradient(rgba(0, 30, 37, 0.959), rgba(0, 61, 94, 0.973)), url(assets/seo-1.png);
-  background-size: cover;
+  linear-gradient(rgba(0, 30, 37, 0.959), rgba(0, 61, 94, 0.973)), url(assets/seo-3.png);
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
