@@ -399,6 +399,7 @@ button{
   padding-bottom: 20px;
   min-width: 360px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.781);
+  
 }
 
 .about,
@@ -410,7 +411,6 @@ button{
 .articulo1:hover,
 .articulo2:hover{
   transform: scale(1.03);
-  
 }
 
 .articulo img,
@@ -419,6 +419,9 @@ button{
   min-width: 350px;
 }
 
+.articulo1 img{
+  margin-bottom: 15px;
+}
 
 .articulo {
   background-image: 
@@ -426,15 +429,17 @@ button{
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 2;
 }
 
 .articulo1{
   background-image: 
   linear-gradient(rgba(0, 30, 37, 0.959), rgba(0, 61, 94, 0.973)),url(assets/responsive-0.png);
-  z-index: 2;
+  
   background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 1;
 }
 
 .articulo2{
