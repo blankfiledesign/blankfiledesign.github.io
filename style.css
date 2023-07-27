@@ -61,6 +61,13 @@ input[type=number]::-webkit-outer-spin-button {
     pointer-events: none;
   }
 
+
+  @media (max-width:576px) {
+    .cursor-dot,
+    .cursor-outline{
+      display: none;
+    }
+  }
   #header{
     position: fixed !important;
     width: 100%;
@@ -319,6 +326,22 @@ input[type=number]::-webkit-outer-spin-button {
     padding-bottom: 50px; 
  }
 
+.flayers button{
+  display:block;
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.781);
+  background-color: #45adc7;
+  margin-left: 30%;
+  font-weight: 600;
+}
+
+.flayers button:hover{
+    transform: scale(1.06);
+    transition-duration: 0.2s;
+}
  .center-flay{
     justify-content: center;
  }
@@ -348,6 +371,7 @@ input[type=number]::-webkit-outer-spin-button {
   transition: all 1.5s;
   padding-top: 20px;
   padding-left: 25px;
+  padding-bottom: 20px;
   min-width: 360px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.781);
 }
@@ -357,11 +381,18 @@ input[type=number]::-webkit-outer-spin-button {
   opacity: 0;
 }
 
+.articulo:hover,
+.articulo1:hover,
+.articulo2:hover{
+  transform: scale(1.03);
+  
+}
+
 .articulo img,
 .articulo1 img,
 .articulo2 img{
   height: 250px;
-  padding-left: 10px;
+  padding-left: 20%;
 }
 
 
@@ -486,7 +517,7 @@ input[type=number]::-webkit-outer-spin-button {
 .trabajos img{
     box-shadow: 2px 4px 200px 200px rgba(23, 44, 48, 0.726);
   }
-  
+ 
   .trabajos hr{
     width: 70%;
     color: #45adc7;
