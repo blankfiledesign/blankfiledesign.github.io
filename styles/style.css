@@ -705,6 +705,10 @@ button{
     h3{
         font-size: 2.1em;
       }
-    
-}
+
+    #bannertop{
+      height: 55vh;
+      padding-top: 100px;
+    }
+  }
 
