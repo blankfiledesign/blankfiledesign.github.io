@@ -1,4 +1,4 @@
-const div = document.querySelector('header');
+const div = document.querySelector('nav');
 let prevY = window.scrollY;
 
 window.addEventListener('scroll', function( ){
