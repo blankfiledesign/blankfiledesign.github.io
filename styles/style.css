@@ -95,6 +95,9 @@ body::-webkit-scrollbar-thumb{
     transform: translateY(-200px)
 }
 
+#fondo{
+  color: #f1f1f1;
+}
 /*navbar*/
 
 .logo{
