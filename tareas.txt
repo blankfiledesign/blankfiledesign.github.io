@@ -6,3 +6,6 @@ de articulo, articulo1 a izq, derecheta arriba abajo etc.
 * cerrar manu lateral (en version mobile) 
 al hacer clic en los enlaces de la navbar
 
+* 
+
+
