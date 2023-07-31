@@ -15,10 +15,15 @@ a{
 body{
     color: #fff;
     font-family: 'Nunito', sans-serif;
-    background-color: #000000;
+    background: #161616;
     line-height: 1.6em;
+    transition: .3s ease all;
 }
 
+body.light{
+  background: #f1f1f1;
+  color: #000000;
+}
 /*delete select number input*/ 
 
 input[type=number]::-webkit-inner-spin-button, 
@@ -78,7 +83,7 @@ body::-webkit-scrollbar-thumb{
     width: 100%;
     z-index: 10;
     font-weight: 400;
-    transition: 0.6s linear 0.1s;
+    transition: 0.2s linear 0.2s;
 }
 
 #header.solid{
@@ -135,7 +140,6 @@ body::-webkit-scrollbar-thumb{
 }
   
 .offcanvas{
-    width: 80% !important;
     background-color: #000000;    
 }
   
@@ -154,13 +158,56 @@ body::-webkit-scrollbar-thumb{
     color: #ffffff;
 }
 
+
+.switch{
+  background: #343D5B;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+  margin-top: 10px;
+}
+
+.switch::after{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  transition: .3s ease all;
+  box-shadow: 0 0 2px 2px rgb(0, 0, 0, .2);
+}
+
+.switch.active{
+  background: orange;
+  color: #000000;
+  &::after{
+    right: 0;
+    left: unset;
+  }
+}
+
+.switch span{
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: #fff;
+}
 /*banner*/ 
 
 #bannertop {
     display: flex;
     align-items: center;
     height: 70vh;
-    color: #fff;
     background-image: 
     linear-gradient(rgba(0, 30, 37, 0.932), rgba(0, 61, 94, 0.87)),url(/assets/prueba.png);
     background-size: cover;
@@ -289,12 +336,14 @@ body::-webkit-scrollbar-thumb{
  /*intro*/ 
 
 .intro{
-    background-color: #161616;
+  
     padding-bottom: 40px;
     padding-top: 50px;
     text-align: center;
-    
 }
+
+.intro.light{
+  background: #f1f1f1;}
 
 .center-inicio{
     justify-content: center;
@@ -308,7 +357,7 @@ body::-webkit-scrollbar-thumb{
  /* section flayers*/
 
  .flayers{
-    background-color: #161616;
+    
     padding-bottom: 50px; 
 }
   
@@ -470,7 +519,6 @@ body::-webkit-scrollbar-thumb{
 }
 
 .nos{
-  background-color: #000000;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.781);
 }
 
@@ -491,7 +539,6 @@ body::-webkit-scrollbar-thumb{
 /* works */ 
 
 .work{
-  background-color: #1a1a1a;
   padding: 50px 0 100px 0;
   background-image: 
   linear-gradient(rgb(34, 34, 34), rgba(54, 54, 54, 0.932)),
@@ -514,10 +561,6 @@ body::-webkit-scrollbar-thumb{
 
 
 /*hablemos*/
-
-.hablemos{
-  background-color: #161616;
-}
   
 .hablemos hr{
   width: 50%;
@@ -526,9 +569,6 @@ body::-webkit-scrollbar-thumb{
 
 /*formulario*/
 
-.formu{
-  background-color: #161616;
-}
 
 #formulario-consulta{
   padding-top: 22px;
@@ -547,8 +587,11 @@ input{
     border: none;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.781);
 }
-  
-  
+
+body.light input{
+  color: #000000;
+}
+
 textarea{
     color: #fff;
     width: 100%;
@@ -561,6 +604,10 @@ textarea{
     min-height: 150px;
     max-height: 150px;
     padding-left: 10px;
+}
+
+body.light textarea{
+  color: #000000;
 }
   
 form button{
@@ -610,10 +657,16 @@ input, textarea {
   box-shadow: 0px 0px 8px rgb(0, 0, 0);
 }
 
+body.light .linkt{
+   color: #000000;
+}
 /*footer*/
-
+footer{
+  background-color: #303030;
+  color: #f1f1f1;
+  box-shadow: 0px 0px 8px rgb(0, 0, 0);
+}
 .footer{
-  background-color: #000000;
   padding: 0 50px;
 }
 
@@ -625,6 +678,7 @@ footer img{
 }
   
 .copyright{
+  background-color: #303030;
     display: flex;
     justify-content: space-between;
     align-content: center;
