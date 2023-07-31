@@ -21,7 +21,7 @@ body{
 }
 
 body.light{
-  background: #f1f1f1;
+  background: rgb(240, 239, 239);;
   color: #000000;
 }
 /*delete select number input*/ 
@@ -404,7 +404,6 @@ body::-webkit-scrollbar-thumb{
   opacity: 0;
   transition: all 1.5s;
   padding-top: 20px;
-  
   padding-bottom: 20px;
   min-width: 350px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.781);
@@ -572,7 +571,6 @@ body::-webkit-scrollbar-thumb{
 
 #formulario-consulta{
   padding-top: 22px;
-  padding-bottom: 22px;
 }
 
 input{
@@ -668,15 +666,23 @@ footer{
 }
 .footer{
   padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
 }
-
-
-
 
 footer img{
   width: 10em;
 }
-  
+
+.link2 a{
+  color: #f1f1f1;
+  transition: .2s;
+}
+
+.link2 a:hover{
+  color:#00bac6;
+}
+
 .copyright{
   background-color: #303030;
     display: flex;
@@ -719,7 +725,7 @@ button{
 
 /*media*/ 
 
-@media (max-width:914px) {
+@media (max-width:950px) {
   .cursor-dot,
   .cursor-outline{
       display: none;
@@ -735,6 +741,12 @@ button{
       height: 2px;
       opacity: 0;
     }
+    .articulo,
+    .articulo1,
+    .articulo2{
+      margin:10px
+    }
+
 }
 
 @media(max-width:768px){
@@ -764,5 +776,10 @@ button{
       height: 55vh;
       padding-top: 100px;
     }
+
+    .flayers{
+      margin:20px
+    }
+
   }
 

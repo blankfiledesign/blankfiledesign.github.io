@@ -1,11 +1,11 @@
 * cambiar nombre a las clases de js, 
-de articulo, articulo1 a izq, derecheta arriba abajo etc.
+de articulo, articulo1 a izq, derecheta arriba abajo etc. 
 
 *agregar boton scroll top
 
 * cerrar manu lateral (en version mobile) 
 al hacer clic en los enlaces de la navbar
 
-* 
+* agregar margin a los articulos del flayer listo
 
 
