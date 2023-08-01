@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 li{
   list-style: none;
 }
@@ -74,6 +78,27 @@ body::-webkit-scrollbar-thumb{
     border-radius: 50%;
     z-index: 15;
     pointer-events: none;
+}
+
+/*btn scroll top*/ 
+
+.btn-scrolltop {
+  position: fixed;
+  bottom: 200px;
+  right: 20px;
+  padding: 15px 20px;
+  background-color: rgba(25, 116, 169, 0.788);
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translateX(200px);
+  transition: 0.5s;
+  z-index: 999;
+}
+
+.btn-scrolltop-on {
+  transform: translateX(0);
 }
 
 /*header*/ 
