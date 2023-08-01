@@ -1,0 +1,45 @@
+.mostrarIzquierda{
+    animation: mostrarIzquierda 1.5s;
+  }
+  
+  @keyframes mostrarIzquierda {
+    0% {
+      transform: translateX(-150px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+.mostrarDerecha{
+    animation: mostrarDerecha 1.5s;
+  }
+  
+  @keyframes mostrarDerecha {
+    0% {
+      transform: translateX(+150px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+.mostrarAbajo{
+    animation: mostrarAbajo 1.5S;
+  }
+  
+  @keyframes mostrarAbajo {
+    0% {
+        transform: translateY(+150px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.der,
+.izq,
+.low{
+    opacity: 0;
+}
