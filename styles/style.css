@@ -19,7 +19,7 @@ a{
 body{
     color: #fff;
     font-family: 'Nunito', sans-serif;
-    background: #161616;
+    background: #0d1117;
     line-height: 1.6em;
     transition: .3s ease all;
 }
@@ -112,7 +112,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 #header.solid{
-    background-color: #3f3f3f;
+    background-color: #010409;
     box-shadow: 0px 0px 5px rgb(0, 225, 255);
 }
   
@@ -508,8 +508,8 @@ body::-webkit-scrollbar-thumb{
 }
 
 /* works */ 
+
 .trabajos{
-  background-color: #161616;
   background-image: 
   linear-gradient(rgba(0, 30, 37, 0.959), rgba(0, 61, 94, 0.973));
   padding: 25px;
@@ -521,13 +521,6 @@ body.light .trabajos{
   background-image: 
   linear-gradient(rgba(0, 30, 37, 0.959), rgba(0, 61, 94, 0.973));
   color: #f1f1f1;
-}
-
-.work{
-  background: #161616;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 body.light .work{
@@ -646,11 +639,16 @@ body.light .linkt{
 }
 /*footer*/
 footer{
-  background-color: #303030;
   color: #f1f1f1;
   box-shadow: 0px 0px 8px rgb(0, 0, 0);
 }
+
+body.light footer{
+  background-color: #0d1117;
+}
+
 .footer{
+  
   padding: 0 50px;
   display: flex;
   justify-content: space-between;
@@ -665,12 +663,12 @@ footer img{
   transition: .2s;
 }
 
+
 .link2 a:hover{
   color:#00bac6;
 }
 
 .copyright{
-  background-color: #303030;
     display: flex;
     justify-content: space-between;
     align-content: center;
