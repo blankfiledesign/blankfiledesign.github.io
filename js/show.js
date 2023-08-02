@@ -21,6 +21,7 @@ function showScroll(){
 
 window.addEventListener('scroll', showScroll);
 
+
 //show derecha a izq
 
 let der = document.querySelectorAll(".der");
