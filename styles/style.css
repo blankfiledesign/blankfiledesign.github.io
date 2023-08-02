@@ -84,7 +84,7 @@ body::-webkit-scrollbar-thumb{
 
 .btn-scrolltop {
   position: fixed;
-  bottom: 200px;
+  bottom: 100px;
   right: 20px;
   padding: 15px 20px;
   background-color: rgba(25, 116, 169, 0.788);
