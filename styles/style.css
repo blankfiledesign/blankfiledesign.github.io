@@ -237,7 +237,8 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
     height: 70vh;
     background-image: 
-    linear-gradient(rgba(0, 30, 37, 0.932), rgba(0, 61, 94, 0.87)),url(/assets/prueba.png);
+    linear-gradient(rgba(0, 30, 37, 0.932), rgba(0, 61, 94, 0.87)),
+    url(/assets/universe.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:left;
@@ -757,7 +758,7 @@ button{
       }
 
     #bannertop{
-      height: 60vh;
+      height: 100vh;
       padding-top: 100px;
     }
 
