@@ -477,20 +477,25 @@ body::-webkit-scrollbar-thumb{
   line-height: 2;
 }
 
-/*animaciones*/
-  
-.mostrarArriba{
-    animation: mostrarArriba 1.5S;
-  }
-  
-  @keyframes mostrarArriba {
-    0% {
-        transform: translateY(-150px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+.meet img{
+  max-width: 80%;
+  align-items: center;
+  margin: auto;
+  box-shadow: 0px 0px 50px #002d3f94 ;
+  border-radius: 5px;
 }
+
+.meet .row{
+  align-items: center;
+  margin: auto;
+  
+}
+
+.img-center{
+  display: flex;
+  
+}
+
 
 /*about*/
 
