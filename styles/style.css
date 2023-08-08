@@ -1,3 +1,11 @@
+:root{
+     --color-primario: #0d1117;
+     --color-secundario: #45adc7;
+     --color-details: hsl(189, 100%, 50%);
+     --color-body-ligth: rgb(240, 239, 239);
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -19,13 +27,13 @@ a{
 body{
     color: #fff;
     font-family: 'Nunito', sans-serif;
-    background: #0d1117;
+    background: var(--color-primario);
     line-height: 1.6em;
     transition: .3s ease all;
 }
 
 body.light{
-  background: rgb(240, 239, 239);;
+  background: rgb(240, 239, 239);
   color: #000000;
 }
 /*delete select number input*/ 
@@ -39,7 +47,7 @@ input[type=number]::-webkit-outer-spin-button {
 /*color selection text*/ 
 
 *::selection {
-    background-color:#45adc7;
+    background-color:var(--color-secundario);
     color:#fff;
 }
 
@@ -51,7 +59,7 @@ body::-webkit-scrollbar{
 }
 
 body::-webkit-scrollbar-thumb{
-    background: #45adc7;
+    background: var(--color-details);
     border-radius: 5px;
 }
 
@@ -60,13 +68,13 @@ body::-webkit-scrollbar-thumb{
 .cursor-dot{
     width: 5px;
     height: 5px;
-    background-color: #45adc7;
+    background-color: var(--color-details);
 }
 
 .cursor-outline{
     width: 30px;
     height: 30px;
-    border: 1px solid hsl(189, 100%, 50%); 
+    border: 1px solid var(--color-details); 
 }
 
 .cursor-dot,
@@ -87,7 +95,7 @@ body::-webkit-scrollbar-thumb{
   bottom: 100px;
   right: 20px;
   padding: 15px 20px;
-  background-color: rgba(25, 116, 169, 0.788);
+  background-color: var(--color-secundario);
   color: white;
   border: 1px solid white;
   border-radius: 50%;
@@ -144,7 +152,7 @@ body::-webkit-scrollbar-thumb{
 
 .nav-item a::after{
     content: "";
-    background-color:#45adc7;
+    background-color:var(--color-details);
     position: absolute;
     left: 0;
     top:80%;
@@ -155,7 +163,7 @@ body::-webkit-scrollbar-thumb{
 
 .navbar-toggler {
     border:none;
-    background-color:#45adc7;
+    background-color:var(--color-secundario);
 }
 
 .navbar-toggler:focus {
@@ -168,7 +176,7 @@ body::-webkit-scrollbar-thumb{
 }
   
 .offcanvas{
-    background-color: #000000; 
+    background-color: var(--color-primario);
 }
   
 .offcanvas-title{
@@ -178,7 +186,7 @@ body::-webkit-scrollbar-thumb{
   
 .offcanvas-title:hover,
 .nav-link:hover{
-    color:#45adc7;
+    color:var(--color-secundario);
 }
   
   
@@ -188,9 +196,9 @@ body::-webkit-scrollbar-thumb{
 
 
 .switch{
-  background: #343D5B;
+  background: var(--color-primario);
   border-radius: 1000px;
-  border: none;
+  border-color: var(--color-details);
   position: relative;
   cursor: pointer;
   display: flex;
@@ -216,6 +224,7 @@ body::-webkit-scrollbar-thumb{
 .switch.active{
   background: orange;
   color: #000000;
+  border-color: var(--color-body-ligth);
   &::after{
     right: 0;
     left: unset;
@@ -296,8 +305,8 @@ body::-webkit-scrollbar-thumb{
 }
   
 .btn-neon:hover{
-    background: #45adc7 ;
-    box-shadow: 0 0 10px #45adc7, 0 0 40px #45adc7, 0 0 80px #bbbbbb !important;
+    background: var(--color-secundario) ;
+    box-shadow: 0 0 10px var(--color-secundario), 0 0 40px var(--color-secundario), 0 0 80px #bbbbbb !important;
     transition-delay: 1s;
     color: #000000;
 }
@@ -397,7 +406,7 @@ body::-webkit-scrollbar-thumb{
     border: none;
     border-radius: 7px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.781);
-    background-color: #45adc7;
+    background-color: var(--color-secundario);
     margin-left: 30%;
     font-weight: 600;
 }
@@ -501,7 +510,7 @@ body::-webkit-scrollbar-thumb{
 
 .nos hr{
   width: 60%;
-  color: #45adc7;
+  color: var(--color-details);
 }
 
 .nos img{
@@ -540,7 +549,7 @@ body.light .work{
  
 .trabajos hr{
   width: 70%;
-  color: #45adc7;
+  color: var(--color-details);
 }
 
 
@@ -548,7 +557,7 @@ body.light .work{
   
 .hablemos hr{
   width: 100%;
-  color: #45adc7;
+  color: var(--color-details);
 }
 
 /*formulario*/
@@ -594,7 +603,7 @@ body.light textarea{
 }
   
 form button{
-    background-color: #45adc7;
+    background-color: var(--color-secundario);
     border: none;
     border-radius: 7px;
     width: 150px;
@@ -611,7 +620,7 @@ form button:hover{
 }
 
 input, textarea {
-  caret-color:#45adc7;
+  caret-color:var(--color-secundario);
 }
 
 #linktree{
@@ -619,7 +628,7 @@ input, textarea {
 }
 
 .linkt:hover{
-    background-color: #45adc7;
+    background-color: var(--color-secundario);
     transform: scale(1.01);
     transition-duration: 0.5s;
     color:rgba(0, 0, 0, 0.63);
@@ -671,7 +680,7 @@ footer img{
 
 
 .link2 a:hover{
-  color:#00bac6;
+  color:var(--color-secundario);
 }
 
 .copyright{
@@ -689,12 +698,12 @@ h3{
 }
 
 h4, h5{
-    color: #45adc7;
+    color: var(--color-secundario);
 }
 
 hr{
     width: 50%;
-    color: #45adc7;
+    color: var(--color-secundario);
     opacity: 1;
 }
 
@@ -723,7 +732,7 @@ button{
 
     .nav-item a::after{
       content: "";
-      background-color:#45adc7;
+      background-color:var(--color-secundario);
       position: absolute;
       left: 0;
       top:80%;
@@ -742,7 +751,7 @@ button{
 @media(max-width:768px){
     .nav-item a::after{
         content: "";
-        background-color:#45adc7;
+        background-color:var(--color-secundario);
         position: absolute;
         left: 0;
         top:80%;
