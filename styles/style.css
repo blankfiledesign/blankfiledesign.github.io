@@ -397,20 +397,21 @@ body::-webkit-scrollbar-thumb{
  /* section flayers*/
 
  .flayers{
-    
     padding-bottom: 50px; 
 }
   
 .flayers button{
+  position: relative;
     display:block;
-    width: 150px;
-    height: 40px;
+    width: 120px;
+    height: 35px;
     border: none;
     border-radius: 7px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.781);
     background-color: var(--color-secundario);
     margin-left: 30%;
     font-weight: 600;
+    top: 25px;
 }
   
 .flayers button:hover{
@@ -445,43 +446,46 @@ body::-webkit-scrollbar-thumb{
   padding-top: 20px;
   padding-bottom: 20px;
   min-width: 350px;
+  margin:10px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.781);
 }
 
-.articulo1 img{
-  margin-bottom: 15px;
+body.light .articulo p,
+body.light .articulo1 p,
+body.light .articulo2 p{
+  color: #f1f1f1;
 }
 
 .articulo {
   background-image: 
-  linear-gradient(rgba(0, 30, 37, 0.959), rgba(0, 61, 94, 0.973)),url(assets/diseñamos-2.png);
-  background-size: contain;
+  linear-gradient(rgba(0, 30, 37, 0.959), rgba(0, 61, 94, 0.705)),url(/assets/diseño.jpeg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
 }
 
 .articulo1{
   background-image: 
-  linear-gradient(rgba(0, 30, 37, 0.959), rgba(0, 61, 94, 0.973)),url(assets/responsive-0.png);
-  
-  background-size:contain;
+  linear-gradient(rgba(0, 30, 37, 0.959), rgba(0, 61, 94, 0.705)),url(/assets/responsive.jpeg);
+  background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .articulo2{
   background-image: 
-  linear-gradient(rgba(0, 30, 37, 0.959), rgba(0, 61, 94, 0.973)), url(assets/seo-3.png);
-  background-size: contain;
+  linear-gradient(rgba(0, 30, 37, 0.959), rgba(0, 61, 94, 0.705)),url(/assets/seo-1080.jpeg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.articulo:hover,
+/*.articulo:hover,
 .articulo1:hover,
 .articulo2:hover{
   transform: scale(1.03);
-}
+}*/
 
 .paragraph {
   font-size: 16px;
@@ -489,7 +493,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .meet img{
-  max-width: 80%;
+  max-width: 70%;
   align-items: center;
   margin: auto;
   box-shadow: 0px 0px 50px #002d3f94 ;
@@ -506,7 +510,6 @@ body::-webkit-scrollbar-thumb{
 
 .img-center{
   display: flex;
-  
 }
 
 
@@ -750,6 +753,10 @@ button{
       margin:10px
     }
 
+    h3{
+      font-size: 1.9em;
+    }
+
 }
 
 @media(max-width:768px){
@@ -768,7 +775,7 @@ button{
     }
 
     #bannertop h1{
-        font-size: 1.9em;
+        font-size: 2.4em;
     }
 
     #bannertop{
@@ -780,5 +787,12 @@ button{
       margin:20px
     }
 
+    h3{
+      font-size: 1.9em;
+    }
+
+    .meet img{
+      max-width: 85%;
+    }
   }
 
