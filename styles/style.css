@@ -244,16 +244,17 @@ body::-webkit-scrollbar-thumb{
 /*banner*/ 
 
 #bannertop {
+  padding-top: 10vh;
     display: flex;
     align-items: center;
-    height: 70vh;
+    text-align: center;
     background-image: 
     linear-gradient(rgba(0, 30, 37, 0.932), rgba(0, 61, 94, 0.87)),
-    url(/assets/universe.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:left;
-    
+    url();
+}
+
+#bannertop img{
+  max-width: 80%;
 }
 
 #bannertop h1{
@@ -409,7 +410,7 @@ body::-webkit-scrollbar-thumb{
     border-radius: 7px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.781);
     background-color: var(--color-secundario);
-    margin-left: 30%;
+    margin: auto;
     font-weight: 600;
     top: 25px;
 }
@@ -448,6 +449,10 @@ body::-webkit-scrollbar-thumb{
   min-width: 350px;
   margin:10px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.781);
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 body.light .articulo p,
@@ -516,11 +521,12 @@ body.light .articulo2 p{
 }
 
 .nos img{
-  transition: all 1.5s;
+  max-width: 80%;
+  transition: all 1s;
 }
 
 .nos img:hover{
-  transform: scale(1.06);
+  transform: scale(1.02);
   
 }
 
@@ -561,6 +567,7 @@ body.light .work{
   width: 100%;
   color: var(--color-details);
 }
+
 
 /*formulario*/
 
@@ -775,8 +782,7 @@ button{
     }
 
     #bannertop{
-      height: 100vh;
-      padding-top: 1vh;
+      padding-top: 10vh;
     }
 
     .flayers{
