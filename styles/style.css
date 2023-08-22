@@ -26,7 +26,7 @@ a{
 
 body{
     color: #fff;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background: var(--color-primario);
     line-height: 1.6em;
     transition: .3s ease all;
@@ -257,8 +257,8 @@ body::-webkit-scrollbar-thumb{
 }
 
 #bannertop h1{
-    font-size: 3.8em;
-    font-weight: 600;
+    font-size: 3.6em;
+    font-weight: 800;
     line-height: 1.2em;
 }
 
@@ -494,7 +494,7 @@ body.light .articulo2 p{
 
 
 .meet img{
-  max-width: 70%;
+  max-width: 65%;
   box-shadow: 0px 0px 50px #002d3f94 ;
   border-radius: 5px;
 }
