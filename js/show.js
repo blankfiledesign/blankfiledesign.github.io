@@ -11,7 +11,7 @@ function showScroll(){
 
         let alturaAnimado = izq[i].offsetTop;
 
-        if( alturaAnimado - 650 < scrollTop){
+        if( alturaAnimado - 700 < scrollTop){
             izq[i].style.opacity = 1;
 
             izq[i].classList.add("mostrarIzquierda")

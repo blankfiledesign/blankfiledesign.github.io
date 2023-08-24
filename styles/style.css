@@ -244,6 +244,7 @@ body::-webkit-scrollbar-thumb{
 /*banner*/ 
 
 #bannertop {
+  min-height: 45.5vh;
   padding-top: 10vh;
     display: flex;
     align-items: center;
@@ -254,7 +255,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 #bannertop img{
-  max-width: 80%;
+  max-width: 100%;
 }
 
 #bannertop h1{
@@ -528,6 +529,15 @@ body.light .articulo2 p{
 .nos img:hover{
   transform: scale(1.02);
   
+}
+
+.about-center{
+  justify-content: center;
+  align-items: center;
+}
+
+.centro-img img{
+    margin-left: 45px;
 }
 
 /* works */ 
