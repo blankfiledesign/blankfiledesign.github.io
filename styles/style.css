@@ -498,21 +498,33 @@ body.light .articulo2 p{
 
 /*meet*/ 
 
-
-.meet img{
-  max-width: 65%;
-  box-shadow: 0px 0px 50px #002d3f94 ;
-  border-radius: 5px;
+.accordion-item{
+  background-color: #ff000000;
+  color: #f1f1f1;
 }
 
-.image{
-  text-align: center;
+body.light .accordion-item{
+  color: #000000;
 }
 
-.image p{
-  padding-left: 50px;
-  padding-right: 50px;
+.accordion-button{
+  color: var(--color-secundario);
+  background-color: #ff010100;
+  font-size: 1em;
+  font-weight: 500;
 }
+
+.accordion-button:not(.collapsed) {
+  color: var(--color-secundario);
+  background-color:#ff010100;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  outline: 0;
+  box-shadow:none;
+}
+
 
 /*about*/
 
@@ -521,12 +533,12 @@ body.light .articulo2 p{
   color: var(--color-details);
 }
 
-.nos img{
+.nos img, .meet img{
   max-width: 80%;
   transition: all 1s;
 }
 
-.nos img:hover{
+.nos img, .meet img:hover{
   transform: scale(1.02);
   
 }
@@ -536,8 +548,9 @@ body.light .articulo2 p{
   align-items: center;
 }
 
-.centro-img img{
-    margin-left: 45px;
+.centro-img{
+    display: grid;
+    place-items: center;
 }
 
 /* works */ 
