@@ -384,8 +384,6 @@ body::-webkit-scrollbar-thumb{
     text-align: center;
 }
 
-.intro.light{
-  background: #f1f1f1;}
 
 .center-inicio{
     justify-content: center;
@@ -525,6 +523,21 @@ body.light .accordion-item{
   box-shadow:none;
 }
 
+.plus{
+  
+  padding-bottom: 40px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.plus.light{
+background: #f1f1f1;}
+
+.center-plus{
+  justify-content: center;
+}
+
+
 
 /*about*/
 
@@ -552,6 +565,9 @@ body.light .accordion-item{
     display: grid;
     place-items: center;
 }
+
+
+
 
 /* works */ 
 
@@ -589,7 +605,7 @@ body.light .work{
   width: 100%;
 }
 .work-galery a{
-  text-decoration: none;
+  color: var(--color-details);
 }
 
 
@@ -598,6 +614,53 @@ body.light .work{
   box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.322);
 }
 
+/*section blog*/
+
+.blog-galery{
+   justify-content: center;
+}
+
+.blog-galery img {
+  width: 85%;
+  max-width: 200px;
+  min-height: 150px;
+  
+  transition: 0.5s;
+  margin-bottom: 15px;  
+}
+
+
+
+
+.blog-galery a{
+  color:#45adc7;
+}
+
+.blog-galery p{
+  color: #f1f1f1;
+}
+
+body.light .blog-galery p{
+  color: #000000;
+}
+
+
+.blog-galery img:hover{
+  transform: scale(0.98);
+  box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.322);
+}
+
+.dominio .row{
+  justify-content: center;
+  padding: 10px;
+}
+
+.dominio-center{
+  background-image: 
+  linear-gradient(rgba(0, 30, 37, 0.959), rgba(0, 61, 94, 0.973));
+  box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.781);
+  padding-top: 15px;
+}
 
 /*hablemos*/
   
@@ -755,7 +818,8 @@ hr{
 }
 
 .intro hr,
-.meet hr{
+.meet hr,
+.plus hr{
   margin-left: 25%;
 }
 

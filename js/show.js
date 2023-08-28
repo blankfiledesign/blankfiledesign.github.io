@@ -66,3 +66,26 @@ function showScrollL(){
 }
 
 window.addEventListener('scroll', showScrollL);
+
+
+//show
+
+let mostrar = document.querySelectorAll(".mostrar");
+
+function showScrollM(){
+    
+    let scrollTop = document.documentElement.scrollTop;
+
+    for (var i=0; i < low.length; i++) {
+
+        let alturaAnimado = mostrar[i].offsetTop;
+
+        if( alturaAnimado - 500 < scrollTop){
+            mostrar[i].style.opacity = 1;
+
+            mostrar[i].classList.add("mostrar")
+        }
+    }
+}
+
+window.addEventListener('scroll', showScrollM);
