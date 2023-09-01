@@ -598,20 +598,16 @@ body.light .work{
 .work-galery img {
   width: 100%;
   transition: 0.5s;
-  margin-bottom: 15px;  
+   
 }
 
-.work-galery iframe{
-  width: 100%;
-}
 .work-galery a{
   color: var(--color-details);
 }
 
 
 .work-galery img:hover{
-  transform: scale(0.98);
-  box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.322);
+  transform: scale(1.2);
 }
 
 /*section blog*/
@@ -624,8 +620,7 @@ body.light .work{
   width: 85%;
   max-width: 200px;
   min-height: 150px;
-  
-  transition: 0.5s;
+  transition: 6s;
   margin-bottom: 15px;  
 }
 
