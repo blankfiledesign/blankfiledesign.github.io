@@ -1,0 +1,21 @@
+
+
+
+<h2  class="">Las primeras impresiones son importantes</h2>
+     <p>
+      Un diseño atractivo y una navegación intuitiva generan confianza y curiosidad, 
+      atrayendo a los usuarios a explorar más. Una buena impresión establece el tono de la 
+      experiencia del usuario y aumenta las posibilidades de conversión. <br>
+      Recuerda ¡solo hay una oportunidad para causar una impresión duradera!
+     </p>
+
+     <h4 class="pt-5 pb-3">
+          Todavia no tenes pensado un nombre para tu sitio web? <br>
+          No tenes idea donde vas a alojarlo?
+        </h4>
+
+        <p>
+          Te ayudamos en la eleccion de tu dominio para que, ademas de ser atractivo, 
+          pueda ser efectivo a la hora de posicionar tu sitio web en los navegadores mas 
+          populares. 
+        </p>
