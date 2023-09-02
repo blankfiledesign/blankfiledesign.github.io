@@ -655,6 +655,13 @@ body.light .blog-galery p{
   linear-gradient(rgba(0, 30, 37, 0.959), rgba(0, 61, 94, 0.973));
   box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.781);
   padding-top: 15px;
+  border-radius: 15px;
+  border: none;
+  color: #f1f1f1;
+}
+
+.dominio-center:hover{
+  
 }
 
 /*hablemos*/
