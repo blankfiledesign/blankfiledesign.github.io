@@ -1,4 +1,8 @@
+crear blogs 
 
+poner hover y after a cada seccion seleccionada
+
+crear css para cada pagina
 
 
 <h2  class="">Las primeras impresiones son importantes</h2>
