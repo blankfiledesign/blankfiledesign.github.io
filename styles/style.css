@@ -303,87 +303,72 @@ body::-webkit-scrollbar-thumb{
     }
 }
 
+
 /*boton del baner*/
-  
-.btn-neon {
-    margin: 25px 50px 25px 50px;
-    position: relative;
-    display: inline-block;
-    padding: 10px 30px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 600;
-    overflow: hidden;
-    transition: 0.2s;
-    box-shadow: 0px 0px 5px rgb(0, 225, 255);
-}
-  
-.btn-neon:hover{
-    background: var(--color-secundario) ;
-    box-shadow: 0 0 10px var(--color-secundario), 0 0 40px var(--color-secundario), 0 0 80px #bbbbbb !important;
-    transition-delay: 1s;
-    color: #000000;
-}
-  
-.btn-neon span{
-    position: absolute;
-    display: block;
-}
-  
-#span1{
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent,#bbbbbb);
-}
-  
-.btn-neon:hover #span1{
-    left: 100%;
-    transition: 1s;
-}
-  
-#span3{
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent,#bbbbbb);
+
+.cssbuttons-io-button {
+  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  border-radius: 10em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
+  box-shadow: 0 0 1.6em rgba(183, 33, 255,0.3),0 0 1.6em hsla(191, 98%, 56%, 0.3);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-.btn-neon:hover #span3{
-    right: 100%;
-    transition: 1s;
-    transition-delay: 0.5s;
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 10em;
+  right: 0.3em;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-#span2{
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg,transparent,#bbbbbb);
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
 }
 
-.btn-neon:hover #span2{
-    top: 100%;
-    transition: 1s;
-    transition-delay: 0.25s;
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #B721FF;
 }
 
-#span4{
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg,transparent,#bbbbbb);
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
 }
 
-.btn-neon:hover #span4{
-    bottom: 100%;
-    transition: 1s;
-    transition-delay: 0.75s;
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.9);
+}
+
+.botones{
+  justify-content: center;
+}
+
+.botones .col-lg-4{
+  display: grid;
+  place-content: center;
+  
 }
 
  /*intro*/ 
@@ -669,7 +654,24 @@ input{
     outline: none;
     border: none;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.781);
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
+
+input:hover,
+textarea:hover {
+  border: 2px solid rgb(0, 114, 122);
+}
+
+input:active,
+textarea:active {
+  transform: scale(0.95) ;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid rgb(0, 195, 209);
+}
+
 
 body.light input{
   color: #000000;
@@ -687,44 +689,91 @@ textarea{
     min-height: 150px;
     max-height: 150px;
     padding-left: 10px;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 body.light textarea{
   color: #000000;
 }
   
-form button{
-    background-color: var(--color-secundario);
-    border: none;
-    border-radius: 7px;
-    width: 150px;
-    height: 60px;
-    margin-top: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.781);
-    color:#fff
-}
-
-form button:hover{
-    transform: scale(1.01);
-    transition-duration: 0.2s;
-    background-color: #1a1a1a;
-}
-
 input, textarea {
   caret-color:var(--color-secundario);
 }
 
-#linktree{
-  padding-top: 46px;
+form button,
+.linkt {
+  width: 150px;
+  height: 60px;
+  background: transparent;
+  border: 2px solid var(--color-details);
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 7px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.5s;
 }
 
-.linkt:hover{
-    background-color: var(--color-secundario);
-    transform: scale(1.01);
-    transition-duration: 0.5s;
-    color:rgba(0, 0, 0, 0.63);
-    font-size: 20px;
-    
+form button span,
+.linkt span {
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+form button::after,
+form button::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background: var(--color-secundario);
+  top: 0;
+  transform: skewX(35deg);
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+.linkt::after,
+.linkt::before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background: var(--color-secundario);
+  top: 0;
+  transform: skewX(35deg);
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+form button::after,
+ .linkt::after{
+  left: -20px;
+}
+
+form button::before,
+.linkt::before {
+  right: -20px;
+}
+
+form button:hover::after,
+.linkt:hover::after {
+  width: 50%;
+  left: 0;
+}
+
+form button:hover::before,
+.linkt:hover::before {
+  width: 50%;
+  right: 0;
+}
+
+#linktree{
+  padding-top: 46px;
 }
 
 .linkt{
@@ -732,17 +781,14 @@ input, textarea {
   height: 60px;
   font-size: 20px;
   background-color: #FBFBFB24;
-  border-radius: 7px;
-  border: none;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
   margin-bottom: 34px;
-  box-shadow: 0px 0px 8px rgb(0, 0, 0);
 }
 
 body.light .linkt{
    color: #000000;
 }
+
+
 /*footer*/
 footer{
   color: #f1f1f1;

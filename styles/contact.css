@@ -329,7 +329,24 @@ input{
     outline: none;
     border: none;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.781);
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
+
+input:hover,
+textarea:hover {
+  border: 2px solid rgb(0, 114, 122);
+}
+
+input:active,
+textarea:active {
+  transform: scale(0.95) ;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid rgb(0, 195, 209);
+}
+
 
 body.light input{
   color: #000000;
@@ -347,44 +364,91 @@ textarea{
     min-height: 150px;
     max-height: 150px;
     padding-left: 10px;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 body.light textarea{
   color: #000000;
 }
   
-form button{
-    background-color: var(--color-secundario);
-    border: none;
-    border-radius: 7px;
-    width: 150px;
-    height: 60px;
-    margin-top: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.781);
-    color:#fff
-}
-
-form button:hover{
-    transform: scale(1.01);
-    transition-duration: 0.2s;
-    background-color: #1a1a1a;
-}
-
 input, textarea {
   caret-color:var(--color-secundario);
 }
 
-#linktree{
-  padding-top: 46px;
+form button,
+.linkt {
+  width: 150px;
+  height: 60px;
+  background: transparent;
+  border: 2px solid var(--color-details);
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 7px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.5s;
 }
 
-.linkt:hover{
-    background-color: var(--color-secundario);
-    transform: scale(1.01);
-    transition-duration: 0.5s;
-    color:rgba(0, 0, 0, 0.63);
-    font-size: 20px;
-    
+form button span,
+.linkt span {
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+form button::after,
+form button::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background: var(--color-secundario);
+  top: 0;
+  transform: skewX(35deg);
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+.linkt::after,
+.linkt::before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background: var(--color-secundario);
+  top: 0;
+  transform: skewX(35deg);
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+form button::after,
+ .linkt::after{
+  left: -20px;
+}
+
+form button::before,
+.linkt::before {
+  right: -20px;
+}
+
+form button:hover::after,
+.linkt:hover::after {
+  width: 50%;
+  left: 0;
+}
+
+form button:hover::before,
+.linkt:hover::before {
+  width: 50%;
+  right: 0;
+}
+
+#linktree{
+  padding-top: 46px;
 }
 
 .linkt{
@@ -392,17 +456,14 @@ input, textarea {
   height: 60px;
   font-size: 20px;
   background-color: #FBFBFB24;
-  border-radius: 7px;
-  border: none;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
   margin-bottom: 34px;
-  box-shadow: 0px 0px 8px rgb(0, 0, 0);
 }
 
 body.light .linkt{
    color: #000000;
 }
+
+
 /*footer*/
 footer{
   color: #f1f1f1;
