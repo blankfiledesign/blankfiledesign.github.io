@@ -442,5 +442,11 @@ footer{
         font-size: 1.9em;
       }
     }
-  
+    body{
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      background: var(--color-primario);
+      line-height: 1.6em;
+      transition: .3s ease all;
+   } 
   
