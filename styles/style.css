@@ -34,7 +34,7 @@ body{
 
 body.light{
   background: #f1f1f1;
-  color: #000000;
+  color: #262626;
 }
 /*delete select number input*/ 
 
@@ -481,11 +481,6 @@ body.light .articulo2 p{
   background-position: center;
 }
 
-/*.articulo:hover,
-.articulo1:hover,
-.articulo2:hover{
-  transform: scale(1.03);
-}*/
 .paragraph {
   line-height: 1.5;
 }
