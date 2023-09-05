@@ -1,4 +1,5 @@
 ELIMINAR LIGTH MODE
+cambiar LA GAMA DE COLORES AL COLOR DE LOS FLAYERS NUEVOS
 
 <h2  class="">Las primeras impresiones son importantes</h2>
      <p>
