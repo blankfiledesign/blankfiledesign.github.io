@@ -33,10 +33,6 @@ body{
     transition: .3s ease all;
 }
 
-body.light{
-  background: #f1f1f1;
-  color: #262626;
-}
 /*delete select number input*/ 
 
 input[type=number]::-webkit-inner-spin-button, 
@@ -129,9 +125,6 @@ body::-webkit-scrollbar-thumb{
     transform: translateY(-200px)
 }
 
-#fondo{
-  color: #f1f1f1;
-}
 /*navbar*/
 
 .logo{
@@ -370,7 +363,6 @@ body::-webkit-scrollbar-thumb{
 }
 
 .cardi {
-  color: #f1f1f1 ;
   min-width: 350px;
   min-height: 300px;
   margin:10px;
@@ -391,13 +383,12 @@ body::-webkit-scrollbar-thumb{
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
-  color: #e8e8e8 ;
   transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
 .content .heading {
-  font-weight: 700;
-  font-size: 32px;
+  font-weight: 400;
+  font-size: 2em;
 }
 
 .content .para {
@@ -405,7 +396,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .content .bton {
-  color: #e8e8e8 ;
+  color: #fff ;
   text-decoration: none;
   padding: 10px;
   font-weight: 600;
@@ -414,6 +405,7 @@ body::-webkit-scrollbar-thumb{
   background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin: auto;
 }
 
 .cardi::before {
@@ -437,8 +429,8 @@ body::-webkit-scrollbar-thumb{
 }
 
 .cardi:hover .bton {
-  color: #212121;
-  background: #e8e8e8;
+  color: #000000;
+  background: #fff;
 }
 
 .content .bton:hover {
