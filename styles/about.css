@@ -1,8 +1,9 @@
 :root{
-    --color-primario: #0d1117;
-    --color-secundario: #45adc7;
-    --color-details: hsl(189, 100%, 50%);
-    --color-body-ligth: rgb(240, 239, 239);
+  --color-primario: #0d1117;
+  --color-secundario:#f89b29;
+  --color-details: #ff0f7b;
+  --color-body-ligth: rgb(240, 239, 239);
+  --color-gradient: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
 }
 
 
@@ -32,10 +33,6 @@ body{
    transition: .3s ease all;
 }
 
-body.light{
- background: #f1f1f1;
- color: #262626;
-}
 /*delete select number input*/ 
 
 input[type=number]::-webkit-inner-spin-button, 
@@ -59,7 +56,7 @@ body::-webkit-scrollbar{
 }
 
 body::-webkit-scrollbar-thumb{
-   background: var(--color-details);
+   background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
    border-radius: 5px;
 }
 
@@ -68,7 +65,7 @@ body::-webkit-scrollbar-thumb{
 .cursor-dot{
    width: 5px;
    height: 5px;
-   background-color: var(--color-details);
+   background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
 }
 
 .cursor-outline{
@@ -95,7 +92,7 @@ body::-webkit-scrollbar-thumb{
  bottom: 100px;
  right: 20px;
  padding: 15px 20px;
- background-color: var(--color-secundario);
+ background:linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
  color: white;
  border: 1px solid white;
  border-radius: 50%;
@@ -119,7 +116,7 @@ body::-webkit-scrollbar-thumb{
 
 #header.solid{
     background-color: #010409;
-    box-shadow: 0px 0px 5px rgb(0, 225, 255);
+    box-shadow: 0 0 0.3em #f89b29,0 0 0.6em #ff0f7b; 
 }
   
 #header.off{
@@ -150,7 +147,7 @@ body::-webkit-scrollbar-thumb{
 
 .nav-item a::after{
     content: "";
-    background-color:var(--color-details);
+    background:linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
     position: absolute;
     left: 0;
     top:80%;
@@ -161,7 +158,7 @@ body::-webkit-scrollbar-thumb{
 
 #a-nosotros::after{
   content: "";
-    background-color:var(--color-details);
+    background:linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
     position: absolute;
     left: 0;
     top:80%;
@@ -172,7 +169,7 @@ body::-webkit-scrollbar-thumb{
 
 .navbar-toggler {
     border:none;
-    background-color:var(--color-secundario);
+    background:linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
 }
 
 .navbar-toggler:focus {
@@ -194,7 +191,7 @@ body::-webkit-scrollbar-thumb{
   
 .offcanvas-title:hover,
 .nav-link:hover{
-    color:var(--color-secundario);
+    color:#f1f1f1;
 }
 
 .d-lg-none a{
@@ -205,51 +202,6 @@ body::-webkit-scrollbar-thumb{
     color: #ff0101;
 }
 
-
-.switch{
-  background: var(--color-primario);
-  border-radius: 1000px;
-  border-color: var(--color-details);
-  position: relative;
-  cursor: pointer;
-  display: flex;
-  outline: none;
-  margin-top: 10px;
-}
-
-.switch::after{
-  content: "";
-  display: block;
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  background: #f1f1f1;
-  top: 0;
-  left: 0;
-  right: unset;
-  border-radius: 100px;
-  transition: .3s ease all;
-  box-shadow: 0 0 2px 2px rgb(0, 0, 0, .2);
-}
-
-.switch.active{
-  background: orange;
-  color: #000000;
-  border-color: var(--color-body-ligth);
-  &::after{
-    right: 0;
-    left: unset;
-  }
-}
-
-.switch span{
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  display: block;
-  background: none;
-  color: #fff;
-}
 /*banner*/ 
 
 #bannertop {
@@ -304,7 +256,7 @@ body::-webkit-scrollbar-thumb{
 /*boton del baner*/
 
 .cssbuttons-io-button {
-  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+  background-image: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
   color: white;
   font-family: inherit;
   padding: 0.35em;
@@ -322,7 +274,7 @@ body::-webkit-scrollbar-thumb{
   cursor: pointer;
   text-transform: uppercase;
   font-weight: 500;
-  box-shadow: 0 0 1.6em rgba(183, 33, 255,0.3),0 0 1.6em hsla(191, 98%, 56%, 0.3);
+  box-shadow: 0 0 0.25em #f89b29,0 0 0.25em #ff0f7b;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
@@ -347,7 +299,7 @@ body::-webkit-scrollbar-thumb{
 .cssbuttons-io-button .icon svg {
   width: 1.1em;
   transition: transform 0.3s;
-  color: #B721FF;
+  color: var(--color-details);
 }
 
 .cssbuttons-io-button:hover .icon svg {
@@ -389,7 +341,7 @@ body::-webkit-scrollbar-thumb{
 
 .nos hr{
     width: 60%;
-    color: var(--color-details);
+    color: var(--color-secundario);
   }
   
   .nos img, .meet img{
@@ -417,26 +369,14 @@ body::-webkit-scrollbar-thumb{
 
 
 .trabajos{
-    background-image: 
-    linear-gradient(rgba(0, 30, 37, 0.959), rgba(0, 61, 94, 0.973));
+  border-radius: 25px;
     padding: 25px;
     box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.781);
-  }
-  
-  body.light .trabajos{
-    background: #f1f1f1;
-    background-image: 
-    linear-gradient(rgba(0, 30, 37, 0.959), rgba(0, 61, 94, 0.973));
-    color: #f1f1f1;
-  }
-  
-  body.light .work{
-    background-color: #f1f1f1;
   }
    
   .trabajos hr{
     width: 35%;
-    color: var(--color-details);
+    color: var(--color-secundario);
   }
   
   .work-galery img {
@@ -457,7 +397,7 @@ body::-webkit-scrollbar-thumb{
   
 .hablemos hr{
     width: 100%;
-    color: var(--color-details);
+    color: var(--color-secundario);
   }
   
   
@@ -484,7 +424,7 @@ input{
 
 input:hover,
 textarea:hover {
-  border: 2px solid rgb(0, 114, 122);
+  border: 2px solid var(--color-secundario);
 }
 
 input:active,
@@ -494,13 +434,9 @@ textarea:active {
 
 input:focus,
 textarea:focus {
-  border: 2px solid rgb(0, 195, 209);
+  border: 2px solid var(--color-secundario);
 }
 
-
-body.light input{
-  color: #000000;
-}
 
 textarea{
     color: #fff;
@@ -517,9 +453,6 @@ textarea{
     transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-body.light textarea{
-  color: #000000;
-}
   
 input, textarea {
   caret-color:var(--color-secundario);
@@ -530,7 +463,7 @@ form button,
   width: 150px;
   height: 60px;
   background: transparent;
-  border: 2px solid var(--color-details);
+  border: 1px solid var(--color-secundario);
   font-weight: bold;
   color: #ffffff;
   border-radius: 7px;
@@ -555,7 +488,7 @@ form button::before {
   position: absolute;
   width: 0;
   height: 100%;
-  background: var(--color-secundario);
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
   top: 0;
   transform: skewX(35deg);
   transition: all 0.5s;
@@ -568,7 +501,7 @@ form button::before {
   position: absolute;
   width: 0;
   height: 100%;
-  background: var(--color-secundario);
+  background-image: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
   top: 0;
   transform: skewX(35deg);
   transition: all 0.5s;
@@ -609,10 +542,6 @@ form button:hover::before,
   margin-bottom: 34px;
 }
 
-body.light .linkt{
-   color: #000000;
-}
-
 
   /*footer*/
 footer{
@@ -620,9 +549,6 @@ footer{
     box-shadow: 0px 0px 8px rgb(0, 0, 0);
   }
   
-body.light footer{
-    background-color: #0d1117;
-  }
   
 .footer{
     
@@ -639,11 +565,7 @@ footer img{
     color: #f1f1f1;
     transition: .2s;
   }
-  
-  
-  .link2 a:hover{
-    color:var(--color-secundario);
-  }
+
   
   .copyright{
       display: flex;
@@ -659,14 +581,20 @@ footer img{
       font-weight: 600;
   }
   
-  h4, h5{
-      color: var(--color-secundario);
+  h4, h5,
+  .link2 a:hover{
+    display:inline-block;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+      
+  
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
   }
   
   hr{
       width: 50%;
       color: var(--color-secundario);
-      opacity: 1;
+      opacity: 0.6;
   }
   
   .intro hr,
@@ -693,7 +621,7 @@ footer img{
   
       .nav-item a::after{
         content: "";
-        background-color:var(--color-secundario);
+        background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
         position: absolute;
         left: 0;
         top:80%;
@@ -701,7 +629,7 @@ footer img{
         height: 2px;
         opacity: 0;
       }
-  
+      
       h3{
         font-size: 1.9em;
       }
@@ -711,7 +639,7 @@ footer img{
   @media(max-width:768px){
       .nav-item a::after{
           content: "";
-          background-color:var(--color-secundario);
+          background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
           position: absolute;
           left: 0;
           top:80%;
