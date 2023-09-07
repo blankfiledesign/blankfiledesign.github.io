@@ -44,7 +44,7 @@ input[type=number]::-webkit-outer-spin-button {
 /*color selection text*/ 
 
 *::selection {
-    background-color:var(--color-secundario);
+    background-color: #38383860;
     color:#fff;
 }
 
@@ -476,9 +476,6 @@ body::-webkit-scrollbar-thumb{
   text-align: center;
 }
 
-.plus.light{
-background: #f1f1f1;
-}
 
 .center-plus{
   justify-content: center;
@@ -630,28 +627,33 @@ background: #f1f1f1;
   transform: translate(-50%, -50%) scale(2);
 }
 
-
-.invita .row{
-  display: flex;
+/*porque bf?*/ 
+.wait .col-lg-3{
+  display: grid;
   place-content: center;
+  padding: 10px;
 }
 
-.invita .col-lg-10 {
+.circle{
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  border-radius: 50%;
   display: flex;
-  place-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
-.invita-b{
-  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
-  box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.781);
-  padding-top: 15px;
-  border-radius: 15px;
-  border: none;
-  color: #f1f1f1;
-  padding-left: 20px;
-  padding-right: 20px;
+.circle i{
+  font-weight: 700;
+  font-size: 6em;
 }
 
+.contenido{
+  text-align: center;
+  padding: 20px 0px;
+}
 /*hablemos*/
   
 .hablemos hr{
