@@ -1,5 +1,4 @@
-ELIMINAR LIGTH MODE
-cambiar LA GAMA DE COLORES AL COLOR DE LOS FLAYERS NUEVOS
+
 
 <h2  class="">Las primeras impresiones son importantes</h2>
      <p>
@@ -9,6 +8,8 @@ cambiar LA GAMA DE COLORES AL COLOR DE LOS FLAYERS NUEVOS
       Recuerda ¡solo hay una oportunidad para causar una impresión duradera!
      </p>
 
+
+box-shadow: 0 5px 10px rgb(0, 0, 0);
 
 box-shadow: 0 0 0.2em #f89b29,0 0 1.6em #ff0f7b; 
 
