@@ -130,7 +130,7 @@ body::-webkit-scrollbar-thumb{
 /*navbar*/
 
 .logo{
-    width: 5em;
+    width: 3em;
 }
 
 .nav-link{
@@ -178,19 +178,16 @@ body::-webkit-scrollbar-thumb{
     box-shadow: none;
 }
 
-.navbar-brand{
-    padding-left: 60px;
-}
-  
+
 .offcanvas{
     background-color: var(--color-primario);
 }
   
-.offcanvas-title{
-    font-size: 1.2em;
+.offcanvas-title img{
+    color: #f1f1f1;
+    width: 3em;
 }
-  
-.offcanvas-title:hover,
+
 .nav-link:hover{
     color:#f1f1f1 ;
 }
@@ -836,15 +833,16 @@ footer{
   box-shadow: 0px 0px 8px rgb(0, 0, 0);
 }
 
-.footer{
-  
-  padding: 0 50px;
-  display: flex;
-  justify-content: space-between;
+.foot{
+  text-align: center;
+}
+
+.foot{
+  align-items: center;
 }
 
 footer img{
-  width: 10em;
+  width: 6em;
 }
 
 .link2 a{
@@ -856,6 +854,8 @@ footer img{
 .link2 a:hover{
   background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
 }
+
+
 
 .copyright{
     display: flex;
@@ -955,7 +955,7 @@ button{
     }
 
     #bannertop{
-      padding-top: 10vh;
+      padding-top: 20vh;
     }
 
     .cardi{

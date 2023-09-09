@@ -129,7 +129,7 @@ body::-webkit-scrollbar-thumb{
 /*navbar*/
 
 .logo{
-    width: 5em;
+    width: 3em;
 }
 
 .nav-link{
@@ -189,7 +189,12 @@ body::-webkit-scrollbar-thumb{
 .offcanvas-title{
     font-size: 1.2em;
 }
-  
+
+.offcanvas-title img{
+  color: #f1f1f1;
+  width: 3em;
+}
+
 .offcanvas-title:hover,
 .nav-link:hover{
     color:#f1f1f1 ;
