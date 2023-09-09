@@ -305,30 +305,33 @@ footer hr{
   }
 /*footer*/
 footer{
-   color: #f1f1f1;
-   box-shadow: 0px 0px 8px rgb(0, 0, 0);
- }
- 
- .footer{
-   
-   padding: 0 50px;
-   display: flex;
-   justify-content: space-between;
- }
- 
- footer img{
-   width: 10em;
- }
- 
- .link2 a{
-   color: #f1f1f1;
-   transition: .2s;
- }
- 
- 
- .link2 a:hover{
-   background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
- }
+  color: #f1f1f1;
+  box-shadow: 0px 0px 8px rgb(0, 0, 0);
+}
+
+.foot{
+  text-align: center;
+}
+
+.foot{
+  align-items: center;
+}
+
+footer img{
+  width: 6em;
+}
+
+.link2 a{
+  color: #f1f1f1;
+  transition: .2s;
+}
+
+
+.link2 a:hover{
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+}
+
+
  
  .copyright{
      display: flex;
