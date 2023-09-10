@@ -213,15 +213,16 @@ body::-webkit-scrollbar-thumb{
 /*banner*/ 
 
 #bannertop {
- min-height: 45.5vh;
- max-height: 95vh;
- padding-top: 10vh;
-   display: flex;
-   align-items: center;
-   text-align: center;
-   background-image: 
-   linear-gradient(rgba(0, 30, 37, 0.932), rgba(0, 61, 94, 0.87)),
-   url();
+min-height: 45.5vh;
+max-height: 95vh;
+padding-top: 10vh;
+display: flex;
+align-items: center;
+text-align: center;
+background-image: url(/assets/sol.png);
+background-position: top;
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 #bannertop img{
@@ -477,7 +478,7 @@ footer{
       }
   
       #bannertop{
-        padding-top: 10vh;
+        padding-top: 30vh;
       }
      h3{
         font-size: 1.9em;
