@@ -211,14 +211,15 @@ body::-webkit-scrollbar-thumb{
 /*banner*/ 
 
 #bannertop {
-  min-height: 45.5vh;
+  min-height: 100vh;
   padding-top: 10vh;
     display: flex;
     align-items: center;
     text-align: center;
-    background-image: 
-    linear-gradient(rgba(0, 30, 37, 0.932), rgba(0, 61, 94, 0.87)),
-    url();
+    background-image: url(/assets/Blank.png);
+    background-repeat: no-repeat no-repeat;
+    background-size:contain;
+    background-position: right;
 }
 
 #bannertop img{
