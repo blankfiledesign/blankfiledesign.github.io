@@ -435,7 +435,7 @@ footer{
   
   /*media*/ 
   
-  @media (max-width:950px) {
+  @media (max-width:991px) {
     .cursor-dot,
     .cursor-outline{
         display: none;
@@ -447,7 +447,7 @@ footer{
         position: absolute;
         left: 0;
         top:80%;
-        width: 15%;
+        width: 35%;
         height: 2px;
         opacity: 0;
       }
@@ -455,6 +455,16 @@ footer{
       h3{
         font-size: 1.9em;
       }
+      #a-blog::after{
+         content: "";
+         background:linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+         position: absolute;
+         left: 0;
+         top:80%;
+         width: 35%;
+         height: 2px;
+         opacity: 1;
+   }
   
   }
   
@@ -465,10 +475,21 @@ footer{
           position: absolute;
           left: 0;
           top:80%;
-          width: 32%;
+          width: 35%;
           height: 2px;
           opacity: 0;
       }
+
+      #a-blog::after{
+         content: "";
+         background:linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+         position: absolute;
+         left: 0;
+         top:80%;
+         width: 35%;
+         height: 2px;
+         opacity: 1;
+   }
       .navbar-brand{
         padding-left: 0px;
       }

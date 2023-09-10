@@ -394,7 +394,7 @@ footer img{
        position: absolute;
        left: 0;
        top:80%;
-       width: 15%;
+       width: 35%;
        height: 2px;
        opacity: 0;
      }
@@ -413,7 +413,7 @@ footer img{
          position: absolute;
          left: 0;
          top:80%;
-         width: 32%;
+         width: 35%;
          height: 2px;
          opacity: 0;
      }
