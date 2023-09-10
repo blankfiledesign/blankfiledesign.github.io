@@ -451,22 +451,41 @@ body::-webkit-scrollbar-thumb{
 
 
 .accordion-button{
-  color: #f1f1f1 ;
   font-size: 0.6em !important;
   background-color: #ff010100;
   font-weight: 500;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+      
+  
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
-.accordion-button:not(.collapsed) {
-  color:#f8294b;
-  background-color:#ff010100;
-}
 
 .accordion-button:focus {
   z-index: 3;
   outline: 0;
   box-shadow:none;
 }
+
+.accordion-button:not(.collapsed)::after {
+  background-image: var(--bs-accordion-btn-active-icon);
+  transform: var(--bs-accordion-btn-icon-transform);
+}
+
+.accordion-button::after {
+  flex-shrink: 0;
+  width: var(--bs-accordion-btn-icon-width);
+  height: var(--bs-accordion-btn-icon-width);
+  margin-left: auto;
+  content: "";
+  background-image: var(--bs-accordion-btn-icon);
+  background-repeat: repeat;
+  background-size: var(--bs-accordion-btn-icon-width);
+  transition: var(--bs-accordion-btn-icon-transition);
+}
+
+
 
 .plus{
   
@@ -497,6 +516,11 @@ body::-webkit-scrollbar-thumb{
   align-items: center;
   margin: auto;
   box-shadow: 0 5px 10px rgb(0, 0, 0);
+  transition: all 0.2s;
+}
+
+.circle:hover{
+  transform: translateY(-30px);
 }
 
 .circle i{
@@ -908,10 +932,13 @@ button{
 
 /*media*/ 
 
-@media (max-width:950px) {
+@media (max-width:991px) {
   .cursor-dot,
   .cursor-outline{
       display: none;
+    }
+    .circle:hover{
+      transform: none;
     }
 
     .nav-item a::after{
@@ -920,7 +947,7 @@ button{
       position: absolute;
       left: 0;
       top:80%;
-      width: 15%;
+      width: 35%;
       height: 2px;
       opacity: 0;
     }
@@ -932,6 +959,16 @@ button{
       font-size: 1.9em;
     }
     
+    #a-inicio::after{
+      content: "";
+        background:linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+        position: absolute;
+        left: 0;
+        top:80%;
+        width: 35%;
+        height: 2px;
+        opacity: 1;
+    }
 
 }
 
@@ -942,12 +979,16 @@ button{
         position: absolute;
         left: 0;
         top:80%;
-        width: 32%;
+        width: 35%;
         height: 2px;
         opacity: 0;
     }
     .navbar-brand{
       padding-left: 0px;
+    }
+
+    .circle:hover{
+      transform: none;
     }
 
     #bannertop h1{
