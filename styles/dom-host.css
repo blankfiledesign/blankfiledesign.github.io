@@ -197,14 +197,16 @@ transform: translateX(0);
 
 
 .titulo{
-    padding-top: 15vh;
+    padding-top: 20vh;
 }
 
 .dom-img{
     max-width: 100%;
 }
 
-
+.interes li{
+    margin-top: 20px;
+}
 
 
 footer hr{
