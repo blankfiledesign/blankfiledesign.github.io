@@ -220,9 +220,9 @@ display: flex;
 align-items: center;
 text-align: center;
 background-image: url(/assets/sol.png);
-background-position: top;
+background-position: right;
 background-repeat: no-repeat;
-background-size: cover;
+background-size: contain;
 }
 
 #bannertop img{
@@ -278,10 +278,10 @@ background-size: cover;
 .card {
    padding: 20px;
    max-width: 350px;
-   border-radius: 20px;
-   background: linear-gradient(-45deg, #f89b297e 0%, #ff0f7b7a 100% );
+   background: var(--color-primario);
    transition: 0.4s;
    color: #f1f1f1;
+   box-shadow: 0 5px 10px rgb(0, 0, 0);
 
  }
  
@@ -290,7 +290,7 @@ background-size: cover;
  }
  
  .card-title {
-   font-size: 18px;
+   font-size: 1.7em;
    font-weight: 600;
    margin: 15px 0 0 10px;
  }
@@ -395,6 +395,11 @@ footer{
         display: none;
       }
 
+      #bannertop{
+         padding-top: 30vh;
+         background-position: bottom;
+       }
+
       .nav-item a::after{
         content: "";
         background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
@@ -454,6 +459,7 @@ footer{
   
       #bannertop{
         padding-top: 30vh;
+        background-position: bottom;
       }
      h3{
         font-size: 1.9em;
