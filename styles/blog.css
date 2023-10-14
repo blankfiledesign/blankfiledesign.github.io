@@ -206,9 +206,21 @@ body::-webkit-scrollbar-thumb{
  color: #f1f1f1;
 }
  
-.d-lg-none a:hover{
-   color: #ff0101;
-}
+.in :hover{
+   color: #2f5ec5;
+ }
+ 
+ .facebook :hover{
+   color: #3b5998;
+ }
+ 
+ .wpp :hover{
+   color:#25D366;
+ }
+ 
+ .inst :hover{
+   color:rgb(255, 0, 200)
+ }
 
 /*banner*/ 
 
