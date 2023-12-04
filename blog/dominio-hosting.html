@@ -42,7 +42,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"/>
    
         <!--estilos-->
-        <link rel="stylesheet" href="/styles/dom-host.css">
+        <link rel="stylesheet" href="/styles/blog-style.css">
         <link rel="stylesheet" href="/styles/show.css">
     
         <!--icono de pagina-->
@@ -61,11 +61,14 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
- <header  id="header"> 
-    <nav class="navbar navbar-expand-lg" data-bs-theme="dark" id="nav">  
+  <header class="" id="header"> 
+    <nav class="navbar navbar-expand-lg" data-bs-theme="ligth" id="nav">  
          <div class="container">
            
-          <a href="https://blankfile.com.ar" class="navbar-brand"><img src="/assets/blank-logo.png" alt="blog - logo - paginas web" class="logo"></a>
+           <a href="https://blankfile.com.ar" class="navbar-brand">
+            <h1 class="sr-only">Diseño web en cordoba</h1>
+             <img src="/assets/blank-logo.png" alt="crear paginas web logo" class="logo">
+           </a>
        
            <!-- NAV BUTTON  -->
 
@@ -73,16 +76,16 @@
            <span class="navbar-toggler-icon"></span>
            </button>
        <!-- OFFCANVAS MAIN CONTAINER START -->
-       <section class="offcanvas offcanvas-start" id="menuLateral" tabindex="-1">
-         <div class="offcanvas-header" data-bs-theme="dark">
-          <a class="offcanvas-title"><img src="assets/blank-logo.png" alt="blank file blog  logo"></a>
-           <button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="offcanvas"></button>
+       <section class="offcanvas offcanvas-start"  id="menuLateral" tabindex="-1">
+         <div class="offcanvas-header" data-bs-theme="ligth" >
+           <a class="offcanvas-title"><img src="/assets/blank-logo.png" alt="diseño web en cordoba "></a>
+           <button class="btn-close btn btn-light" type="button" aria-label="Close" data-bs-dismiss="offcanvas"></button>
          </div>
          <!-- OFF CANVAS MENU LINKS  START-->
          <div class="offcanvas-body d-flex flex-column justify-content-between px-5">
            <ul class="navbar-nav fs-6 justify-content-end ">
              <li class="nav-item p-3 py-md-1">
-               <a href="/index.html" id="a-inicio" class="nav-link">INICIO</a>
+               <a href="/index.html" class="nav-link">INICIO</a>
              </li>
              <li class="nav-item p-3 py-md-1">
                <a href="/sobre-nosotros.html" class="nav-link">NOSOTROS</a>
@@ -97,19 +100,19 @@
            <!-- enlaces redes sociales -->
 
            <div class="d-lg-none align-self-center py-5 ">
-              
-            <a class="facebook" href="https://www.facebook.com/blankfiledd" target="_blank"><i class="bi bi-facebook px-2  fs-2"></i></a>
-            <a class="wpp" href="https://api.whatsapp.com/send?phone=+5493521531997&amp;text= Quiero mi pagina web : "
-            target="_blank""><i class="bi bi-whatsapp px-2  fs-2"></i></a>
-            <a class="inst" href="https://www.instagram.com/blankfileweb/" target="_blank"><i class="bi bi-instagram px-2 fs-2"></i></a>
-            <a class="in" href="https://www.linkedin.com/in/blank-file-dise%C3%B1o-web-776462289/" target="_blank"><i class="bi bi-linkedin px-2 fs-2"></i></a>
-          </div>
+             
+             <a class="facebook" href="https://www.facebook.com/blankfiledd" target="_blank"><i class="bi bi-facebook px-2  fs-2"></i></a>
+             <a class="wpp" href="https://api.whatsapp.com/send?phone=+5493521531997&amp;text= Quiero mi pagina web : "
+             target="_blank""><i class="bi bi-whatsapp px-2  fs-2"></i></a>
+             <a class="inst" href="https://www.instagram.com/blankfileweb/" target="_blank"><i class="bi bi-instagram px-2 fs-2"></i></a>
+             <a class="in" href="https://www.linkedin.com/in/blank-file-dise%C3%B1o-web-776462289/" target="_blank"><i class="bi bi-linkedin px-2 fs-2"></i></a>
+           </div>
          </div>
        </section>
          <!-- OFFCANVAS MAIN CONTAINER END  -->
          </div>
        </nav>
-</header>
+   </header>
 
 <section class="titulo container">
     <div class="row">
@@ -243,54 +246,64 @@
 
 <!--footer-->
  
-<footer class="">
-  <hr style="width: 90%; margin-left: 5%;">
-    <div class="container footer">
-        <div class="row pt-4 foot">
-            <div class=" col-lg-3 ">
-                <img class="img-fluid" src="/assets/blank-logo.png" alt="diseño web blank file logo">
-                </div>
-                <div class="col-lg-5">
-                  <p class="py-4">
-                    Como vos, estamos creciendo, nos estamos expandiendo y queremos que seas parte de esto. 
-                    <br>
-                    <br>
-                    
-                     Servicios de Marketing digital y Desarrollo web. <br>
-                     B° Cabildo - Cordoba capital, Argentina.
-                 </p>
-            </div>
-            
-            <div class="col-lg-3 col-sm-4" id="linkf">
-              <h5 id="">RECURSOS</h4>
-                <h6 class="link2 py-2"><a href="index.html">Inicio</a></h6>
-                <h6 class="link2 py-2"><a href="sobre-nosotros.html" >Sobre nosotros</a></h6>
-                <h6 class="link2 py-2"><a href="blog.html" >Blog</a></h6>
-                <h6 class="link2 pt-2"><a href="contacto.html" >Contactanos</a></h6>
-            </div>
-      
-        </div>
+<footer class="footer container-fluid">
+
+  <div class="footer-main row pt-4">
+
+    <div class=" col-lg-4 col-md-3">
+      <img class="img-fluid" src="/assets/blank-logo.png" alt="footer diseño web logo">
       </div>
+      <div class="col-lg-4 col-md-3">
+      <p class="py-4">
+         Como vos, estamos creciendo, nos estamos expandiendo y queremos que seas parte de esto. 
+         <br>
+         <br>
+         
+          Servicios de Marketing digital y Desarrollo web.
+      </p>
+  </div>
   
-      <hr>
-      <div class="container ">
-        <div class="row copyright">
-          <div class=" col-md-6">
-                  <p >
-                    Copyright © 2023 Blank file
-                  </p>
-          </div>
-          <div class="col-md-6">
-            <p>
-                   Todos los derechos reservados.
-                  </p>
-          </div>
-                  
-                  
-          </div>
-       </div>             
+  <div class="col-lg-4 col-md-3" id="linkf">
+    <h5><strong>CONTACTO</strong></h5>
+    <hr>
+    <ul id="f-contact">
+      
+      <li>
+        <a href="https://api.whatsapp.com/send?phone=+5493521531997&amp;text= Quiero mi pagina web : "
+target="_blank"><button class="wps"><i class="bi bi-whatsapp px-2  fs-4"></i>3521 531997</button></a>
+      </li>
+      <li>
+        <a href="/contacto.html"><i class="fas fa-align-justify px-2 fs-4" style="color: #596169;"></i>Formulario de Contacto</a>
+      </li>
+      <li>
+        <a href="mailto:blankfile.contact@gmail.com"><i class="bi bi-envelope-at px-2 fs-4"></i>blankfile.contact@gmail.com</a>
+      </li>
+      <li>
+        <i class="fas fa-map-marker-alt px-2  fs-4" style="color: #596169;"> </i> B° Cabildo - Cordoba capital, Argentina.
+      </li>
+      <li style="display: flex;">
+        <a class="facebook" href="https://www.facebook.com/blankfiledd" target="_blank"><i class="bi bi-facebook px-2  fs-3"></i></a>
+        <a class="inst" href="https://www.instagram.com/blankfileweb/" target="_blank"><i class="bi bi-instagram px-2 fs-3"></i></a>
+        <a class="in" href="https://www.linkedin.com/in/blank-file-dise%C3%B1o-web-776462289/" target="_blank"><i class="bi bi-linkedin px-2 fs-3"></i></a>
+        
+      </li>
+    </ul>
+      
     
-  </footer>
+  </div>
+
+</div>
+  </div>
+
+  <div class="footer-copy row">
+    <div class=" col-md-12" >
+      <p class="" >
+        © 2023 Blank file / Todos los derechos reservados.
+      </p>
+</div>
+  </div>
+
+ </footer>
 
 
 
