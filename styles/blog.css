@@ -144,7 +144,7 @@ body::-webkit-scrollbar-thumb{
   }
   
   .logo{
-      width: 3em;
+      width: 10em;
   }
   
   
@@ -191,7 +191,7 @@ body::-webkit-scrollbar-thumb{
   }
   
   .offcanvas-title img{
-      width: 3em;
+      width: 13em;
   }
   
   .nav-link:hover{
@@ -329,7 +329,7 @@ footer{
   
   footer img{
     display: flex;
-    width: 6em;
+    width: 15em;
     margin: auto;
   }
   

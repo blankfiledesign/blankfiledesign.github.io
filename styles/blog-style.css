@@ -144,7 +144,7 @@ border: 0;
 }
 
 .logo{
-  width: 3em;
+  width: 10em;
 }
 
 
@@ -191,7 +191,7 @@ background: linear-gradient(90deg, rgba(31,20,157,1) 5%, rgba(31,130,227,1) 55%,
 }
 
 .offcanvas-title img{
-  width: 3em;
+  width: 13em;
 }
 
 .nav-link:hover{
@@ -310,7 +310,7 @@ footer{
 
 footer img{
   display: flex;
-  width: 6em;
+  width: 15em;
   margin: auto;
 }
 
