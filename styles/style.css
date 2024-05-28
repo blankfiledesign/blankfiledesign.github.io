@@ -1,11 +1,12 @@
 :root{
-    --color-primario: #0d1117;
-    --color-secundario:rgba(31,20,157,1);
-    --color-details: rgba(26,221,202,1);
-    --color-body-ligth:#fff;
-    --color-letra: #596169;
-    --color-gradient: linear-gradient(90deg, rgba(31,20,157,1) 5%, rgba(31,130,227,1) 55%, rgba(26,221,202,1) 93%);
+  --color-primario: #0d1117;
+  --color-secundario: #2C175E;
+  --color-details: #4D3485;
+  --color-body-ligth:#fff;
+  --color-letra: #34383d;
+  --gradient-background: radial-gradient(68.33% 68.33% at 49.99% 31.67%, #4D3485 0%, #2C175E 76.56%);
 }
+
 
 
 *{
@@ -46,7 +47,7 @@ input[type=number]::-webkit-outer-spin-button {
 /*color selection text*/ 
 
 *::selection {
-    background-color: #1863c560;
+    background-color: #4e3485be;
     color:#fff;
 }
 
@@ -54,11 +55,11 @@ input[type=number]::-webkit-outer-spin-button {
 
 body::-webkit-scrollbar{
     width: 12px;
-    background: #cac5c5;
+    background: #907d91;
 }
 
 body::-webkit-scrollbar-thumb{
-  background: linear-gradient(-45deg, rgba(31,20,157,1) 5%, rgba(31,130,227,1) 55%, rgba(26,221,202,1) 93%);
+  background: var(--gradient-background);
     border-radius: 5px;
 }
 
@@ -67,7 +68,7 @@ body::-webkit-scrollbar-thumb{
 .cursor-dot{
     width: 5px;
     height: 5px;
-    background: linear-gradient(90deg, rgb(8, 195, 228) 5%, rgba(31,130,227,1) 55%, rgba(26,221,202,1) 93%);
+    background: var(--gradient-background)
 }
 
 .cursor-outline{
@@ -112,7 +113,7 @@ body::-webkit-scrollbar-thumb{
 /*header*/ 
 
 #header{
-  background-color: var(--color-body-ligth);
+  background-color: #1c242d;
     position: fixed !important;
     width: 100%;
     z-index: 10;
@@ -155,11 +156,12 @@ body::-webkit-scrollbar-thumb{
 
 .nav-item a{
     position: relative;
+    color: white;
 }
 
 .nav-item a::after{
     content: "";
-background: linear-gradient(90deg, rgba(31,20,157,1) 5%, rgba(31,130,227,1) 55%, rgba(26,221,202,1) 93%);
+background: var(--gradient-background);
     position: absolute;
     left: 0;
     top:80%;
@@ -171,7 +173,7 @@ background: linear-gradient(90deg, rgba(31,20,157,1) 5%, rgba(31,130,227,1) 55%,
 
 #a-inicio::after{
   content: "";
-  background: linear-gradient(90deg, rgba(31,20,157,1) 5%, rgba(31,130,227,1) 55%, rgba(26,221,202,1) 93%);
+  background: var(--gradient-background);
     position: absolute;
     left: 0;
     top:80%;
@@ -196,7 +198,7 @@ background: linear-gradient(90deg, rgba(31,20,157,1) 5%, rgba(31,130,227,1) 55%,
 
 .nav-link:hover{
   
-  color:  rgba(31,130,227,1);
+  color:  var(--color-details);
 }
 
 .d-lg-none a{
@@ -226,12 +228,11 @@ background: linear-gradient(90deg, rgba(31,20,157,1) 5%, rgba(31,130,227,1) 55%,
 #bannertop {
   color: var(--color-body-ligth);
   min-height: 70vh;
-  padding-top: 20vh;
+  padding-top: 5vh;
     display: flex;
     align-items: center;
     text-align: center;
-    background: rgb(31,20,157);
-    background: linear-gradient(90deg, rgba(31,20,157,1) 5%, rgba(31,130,227,1) 55%, rgba(26,221,202,1) 93%);
+    background: var(--gradient-background);
     
 }
 
@@ -240,7 +241,7 @@ background: linear-gradient(90deg, rgba(31,20,157,1) 5%, rgba(31,130,227,1) 55%,
 }
 
 #bannertop h2{
-    font-size: 3.6em;
+    font-size: 3em;
     font-weight: 800;
     line-height: 1.2em;
 }
@@ -277,7 +278,7 @@ background: linear-gradient(90deg, rgba(31,20,157,1) 5%, rgba(31,130,227,1) 55%,
 /*boton del baner*/
 
 .cssbuttons-io-button {
-  background-image: linear-gradient(-45deg, rgba(31,20,157,1) 5%, rgba(31,130,227,1) 55%, rgba(26,221,202,1) 93%);
+  background-image: var(--gradient-background);
   color: white;
   font-family: inherit;
   padding: 0.35em;
@@ -300,7 +301,7 @@ background: linear-gradient(90deg, rgba(31,20,157,1) 5%, rgba(31,130,227,1) 55%,
 }
 
 .cssbuttons-io-button .icon {
-  background: white;
+  background: rgba(255, 255, 255, 0.637);
   margin-left: 1em;
   position: absolute;
   display: flex;
@@ -350,12 +351,17 @@ background: linear-gradient(90deg, rgba(31,20,157,1) 5%, rgba(31,130,227,1) 55%,
 /*intro*/ 
 
 .intro{
-  
+  background-image: url(/assets/wave.svg);
+  background-size:cover;
+  background-position: top;
   padding-bottom: 40px;
-  padding-top: 50px;
   text-align: center;
 }
 
+.intro h2 {
+  color: #fff;
+
+}
 .intro p{
   font-size: 1.2em; 
 }
@@ -371,16 +377,26 @@ background: linear-gradient(90deg, rgba(31,20,157,1) 5%, rgba(31,130,227,1) 55%,
 
 
 /*porque bf?*/ 
-.wait .col-lg-3{
+
+.wait .row{
+  justify-content: center;
+}
+
+.wait .col-lg-2{
   display: grid;
   place-content: center;
   padding: 10px;
+  background-image: var(--gradient-background);
+  color: #fff;
+  margin: 3px;
+  border-top-right-radius: 17px;
+  border-bottom-left-radius: 17px;
 }
 
 .circle{
   width: 200px;
   height: 200px;
-  background-image: linear-gradient(90deg, rgba(31,20,157,1) 5%, rgba(31,130,227,1) 55%, rgba(26,221,202,1) 93%);
+  background-image: var(--gradient-background);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -423,7 +439,7 @@ background: linear-gradient(90deg, rgba(31,20,157,1) 5%, rgba(31,130,227,1) 55%,
   font-size: 0.6em !important;
   background-color: #c0212100;
   font-weight: 500;
-  background: linear-gradient(180deg, rgba(31,20,157,1) 5%, rgba(31,130,227,1) 55%, rgba(26,221,202,1) 93%);
+  background: var(--gradient-background);
       
   
     -webkit-text-fill-color: transparent;
@@ -538,7 +554,7 @@ padding: 10px;
 font-weight: 600;
 border: none;
 cursor: pointer;
-background: linear-gradient(90deg, rgba(31,20,157,1) 5%, rgba(31,130,227,1) 55%, rgba(26,221,202,1) 93%);
+background: var(--gradient-background);
 border-radius: 5px;
 box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 margin: auto;
