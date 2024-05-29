@@ -225,14 +225,18 @@ background: var(--gradient-background);
 
 /*banner*/ 
 
+#banner{
+  background: var(--gradient-background);
+}
+
 #bannertop {
   color: var(--color-body-ligth);
-  min-height: 70vh;
+  min-height: 58vh;
   padding-top: 5vh;
     display: flex;
     align-items: center;
     text-align: center;
-    background: var(--gradient-background);
+    
     
 }
 
@@ -351,14 +355,17 @@ background: var(--gradient-background);
 /*intro*/ 
 
 .intro{
-  background-image: url(/assets/wave.svg);
-  background-size:cover;
+  
+ ** background-image: url(/assets/wave.svg);
+ background-repeat: no-repeat;
+ background-size: cover;
   background-position: top;
+  back
   padding-bottom: 40px;
   text-align: center;
 }
 
-.intro h2 {
+**.intro h2 {
   color: #fff;
 
 }
@@ -391,6 +398,7 @@ background: var(--gradient-background);
   margin: 3px;
   border-top-right-radius: 17px;
   border-bottom-left-radius: 17px;
+  padding-top: 30px;
 }
 
 .circle{
@@ -825,7 +833,7 @@ button{
 
 
     #bannertop{
-      padding-top: 20vh;
+      padding-top: 10vh;
     }
 
     .nav-item a::after{
@@ -883,7 +891,7 @@ button{
     }
 
     #bannertop{
-      padding-top: 20vh;
+      padding-top: 15vh;
     }
 
     .cardi{
