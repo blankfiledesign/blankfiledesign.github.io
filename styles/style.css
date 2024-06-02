@@ -360,7 +360,6 @@ background: var(--gradient-background);
  background-repeat: no-repeat;
  background-size: cover;
   background-position: top;
-  back
   padding-bottom: 40px;
   text-align: center;
 }
@@ -399,6 +398,7 @@ background: var(--gradient-background);
   border-top-right-radius: 17px;
   border-bottom-left-radius: 17px;
   padding-top: 30px;
+  min-width: min-content;
 }
 
 .circle{
@@ -426,15 +426,11 @@ background: var(--gradient-background);
 .contenido{
   text-align: center;
   padding: 20px 0px;
+
 }
 
 
 /*meet*/ 
-
-.meet-color{
-  background-color: #f4f6fa;
-}
-
 
 
 .accordion-item{
@@ -503,26 +499,18 @@ background: var(--gradient-background);
 
  .flayers{
   padding-bottom: 50px; 
+  background-image: url(/assets/wave-top/wave7.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 }
 
 .center-flay{
   justify-content: center;
 }
 
-.hide,
-.hide2,
-.hide3{
-display: none;
-}
-
-.show,
-.show2,
-.show3{
-display: block;
-transition: all 0.5s;
-}
-
 .cardi {
+  background-color: var(--color-body-ligth);
 min-width: 350px;
 min-height: 300px;
 margin:10px;
@@ -555,18 +543,6 @@ font-size: 2em;
 line-height: 1.5;
 }
 
-.content .bton {
-color: #fff ;
-text-decoration: none;
-padding: 10px;
-font-weight: 600;
-border: none;
-cursor: pointer;
-background: var(--gradient-background);
-border-radius: 5px;
-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-margin: auto;
-}
 
 .cardi::before {
 content: "";
@@ -575,13 +551,22 @@ left: 0;
 bottom: 0;
 width: 100%;
 height: 5px;
-background: linear-gradient(90deg, rgba(31,20,157,1) 5%, rgba(31,130,227,1) 55%, rgba(26,221,202,1) 93%);
-z-index: -1;
+background: var(--gradient-background) !important;
+z-index: 1;
 transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
 /* works */ 
+.work{
+  background-image: url(/assets/wave-bottom/wave.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
 
+.work h6{
+  color: var(--color-details);
+}
 
 .trabajos{
   padding: 25px;
@@ -589,7 +574,7 @@ transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
  
 .trabajos hr{
   width: 35%;
-  color: linear-gradient(90deg, rgba(31,20,157,1) 5%, rgba(31,130,227,1) 55%, rgba(26,221,202,1) 93%); ;
+  color: var(--gradient-background);
 }
 
 .work-galery{
@@ -633,7 +618,7 @@ transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
   min-height: 300px;
   width: 100%;
   max-width: 320px;
-  background-image: linear-gradient(90deg, rgba(31,20,157,1) 5%, rgba(31,130,227,1) 55%, rgba(26,221,202,1) 93%);
+  background-image: var(--gradient-background);
   border-radius: 10px;
   padding: 10px 30px;
   overflow: hidden;
@@ -723,7 +708,7 @@ transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
   transform: translate(-50%, -50%) scale(0);
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(90deg, rgba(31, 20, 157, 0.151) 0%, rgba(31, 129, 227, 0.274) 55%, rgba(26, 221, 202, 0.274) 100%);
+  background-image: linear-gradient(90deg, rgba(91, 20, 157, 0.151) 0%, rgba(116, 31, 227, 0.274) 55%, rgba(166, 26, 221, 0.274) 100%);
   transition: transform 0.5s ease;
 }
 
@@ -734,8 +719,13 @@ transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
 
 /*footer*/
 footer{
-  background-color: #1e2832;
+  background-color: #f4f6fa;
   color:#8a949d;
+  background-image: url(/assets/wave-bottom/wave-footer.svg);
+  background-position: bottom;
+  background-size:cover;
+
+
 }
 
 
@@ -769,10 +759,6 @@ footer img{
   transition: .2s;
 }
 
-#linkf h5{
-  color: var(--color-letra) !important;
-}
-
 .footer-copy{
   background-color: #1c242d;
 }
@@ -790,10 +776,9 @@ h3{
     font-weight: 600;
 }
 
-h4,
-.link2 a:hover{
+h4{
   display:inline-block;
-  background: linear-gradient(-30deg, rgba(31,20,157,1) 5%, rgba(31,130,227,1) 55%, rgba(26,221,202,1) 93%);
+  background: var(--gradient-background);
     
 
   -webkit-text-fill-color: transparent;
