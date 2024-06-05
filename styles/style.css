@@ -4,7 +4,8 @@
   --color-details: #4D3485;
   --color-body-ligth:#fff;
   --color-letra: #34383d;
-  --gradient-background: radial-gradient(68.33% 68.33% at 49.99% 31.67%, #4D3485 0%, #2C175E 76.56%);
+  --color-details-2:#5B42F3;
+  --gradient-background: radial-gradient(68.33% 68.33% at 49.99% 31.67%, #5B42F3 0%, #4D3485 76.56%);
 }
 
 
@@ -68,13 +69,13 @@ body::-webkit-scrollbar-thumb{
 .cursor-dot{
     width: 5px;
     height: 5px;
-    background: var(--gradient-background)
+    background: var(--color-details)
 }
 
 .cursor-outline{
     width: 30px;
     height: 30px;
-    border: 1px solid  var(--color-details);
+    border: 1px solid  var(--color-details-2);
 }
 
 .cursor-dot,
@@ -198,11 +199,11 @@ background: var(--gradient-background);
 
 .nav-link:hover{
   
-  color:  var(--color-details);
+  color: #5B42F3;
 }
 
 .d-lg-none a{
-  color: var(--color-letra);
+  color: var(--color-body-ligth);
 }
   
 .in :hover{
@@ -231,7 +232,7 @@ background: var(--gradient-background);
 
 #bannertop {
   color: var(--color-body-ligth);
-  min-height: 58vh;
+  min-height: 70vh;
   padding-top: 5vh;
     display: flex;
     align-items: center;
@@ -281,60 +282,52 @@ background: var(--gradient-background);
 
 /*boton del baner*/
 
-.cssbuttons-io-button {
-  background-image: var(--gradient-background);
-  color: white;
-  font-family: inherit;
-  padding: 0.35em;
-  padding-left: 1.2em;
-  font-size: 17px;
-  border-radius: 10em;
-  border: none;
-  letter-spacing: 0.05em;
-  display: flex;
+.but {
   align-items: center;
-  overflow: hidden;
-  position: relative;
-  height: 2.8em;
-  padding-right: 3.3em;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: 500;
-  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.37);
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-}
-
-.cssbuttons-io-button .icon {
-  background: rgba(255, 255, 255, 0.637);
-  margin-left: 1em;
-  position: absolute;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#8d00eb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
   display: flex;
-  align-items: center;
+  font-size: 18px;
   justify-content: center;
-  height: 2.2em;
-  width: 2.2em;
-  border-radius: 10em;
-  right: 0.3em;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-}
-
-.cssbuttons-io-button:hover .icon {
-  width: calc(100% - 0.6em);
-}
-
-.cssbuttons-io-button .icon svg {
-  width: 1.1em;
-  transition: transform 0.3s;
-  color: var(--color-details);
-}
-
-.cssbuttons-io-button:hover .icon svg {
-  transform: translateX(0.1em);
-}
-
-.cssbuttons-io-button:active .icon {
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all .3s;
+ }
+ 
+ .but:active,
+ .but:hover {
+  outline: 0;
+ }
+ 
+ .but span {
+  background-color: var(--color-secundario);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+ }
+ 
+ .but:hover span {
+  background: none;
+ }
+ 
+ .but:active {
   transform: scale(0.9);
-}
+ }
+
 
 .botones{
   justify-content: center;
@@ -356,10 +349,6 @@ background: var(--gradient-background);
 
 .intro{
   
- ** background-image: url(/assets/wave.svg);
- background-repeat: no-repeat;
- background-size: cover;
-  background-position: top;
   padding-bottom: 40px;
   text-align: center;
 }
@@ -389,22 +378,27 @@ background: var(--gradient-background);
 }
 
 .wait .col-lg-2{
+  background-image: url(/assets/wave-bottom/wave-card.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
   display: grid;
   place-content: center;
   padding: 10px;
-  background-image: var(--gradient-background);
   color: #fff;
   margin: 3px;
   border-top-right-radius: 17px;
   border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
   padding-top: 30px;
   min-width: min-content;
+  border: 1px solid var(--color-details);
 }
 
 .circle{
   width: 200px;
   height: 200px;
-  background-image: var(--gradient-background);
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#8d00eb);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -551,7 +545,7 @@ left: 0;
 bottom: 0;
 width: 100%;
 height: 5px;
-background: var(--gradient-background) !important;
+background: #5B42F3 !important;
 z-index: 1;
 transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
 }
