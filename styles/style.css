@@ -248,14 +248,10 @@ background: var(--color-body-ligth);
   min-height: 75vh;
   display: flex;
   align-items: center;
-    
-    
 }
 
 #bannertop h2{
-    font-size: 2.5em;
     font-weight: 800;
-    line-height: 1.2em;
 }
 
 /*div hijo del banner*/
@@ -333,11 +329,14 @@ background: var(--color-body-ligth);
 
 /*porque bf?*/ 
 
+
+
 .wait .row{
   justify-content: center;
   background-image: url(/assets/wave-card.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: px;
 }
 
 .wait .col-lg-2{
@@ -359,8 +358,8 @@ background: var(--color-body-ligth);
 
 
 .circle{
-  width: 200px;
-  height: 200px;
+  width: 90px;
+  height: 90px;
   background-color: var(--color-dos-btn);
   border-radius: 50%;
   display: flex;
@@ -377,18 +376,36 @@ background: var(--color-body-ligth);
 
 .circle i{
   font-weight: 700;
-  font-size: 6em;
+  font-size: 4em;
 }
 
-.contenido{
+
+/*cards nuevas*/
+
+.card-cruz .col-md-3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.equal-height {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  background-color: #0d6efd;
+  color: var(--color-body-ligth);
+  box-shadow: 15px 15px 15px #16a359;
+
+}
+.card-body {
+  flex: 1;
   text-align: center;
-  padding: 20px 0px;
-
+  display: grid;
+  place-content: center;
 }
-
 
 /*meet*/ 
-
 
 .accordion-item{
   background-color: #ff000000;
@@ -833,39 +850,22 @@ button{
       transform: none;
     }
 
-    #bannertop h2{
-        font-size: 2.4em;
-    }
-
     #bannertop{
-      padding-top: 15vh;
-    }
-
-    .cardi{
-      margin:20px
-    }
-
-    h3{
-      font-size: 1.9em;
-    }
-
+      padding-top: 17vh;
+    } 
+    
     .meet img{
       max-width: 85%;
     }
 
-    .boton2{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      margin-top: 40px;
-    }
-
     .plus{
-  
       padding-bottom: 0px;
       padding-top: 0px;
       text-align: center;
+    }
+
+    .card-cruz .col-md-3{
+      height: max-content;
     }
   }
 
