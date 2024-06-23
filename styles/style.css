@@ -4,8 +4,7 @@
   --color-letra: #2C2C2C;
   --color-primario: #0d6efd;
   --color-body-ligth:#f4f6fa;
-  --gradient-background: radial-gradient(68.33% 68.33% at 49.99% 31.67%, #5B42F3 0%, #4D3485 76.56%);
-  --color-gradient: linear-gradient(90deg, rgba(31,20,157,1) 5%, rgba(31,130,227,1) 55%, rgba(26,221,202,1) 93%);
+
 }
 
 
@@ -138,18 +137,12 @@ body::-webkit-scrollbar-thumb{
   content: "";
   position: absolute;
   right: 0;
-  bottom: -.75rem;
   left: 0;
   margin: auto;
   width: 70%;
   border-top: 1px solid rgba(255, 255, 255, .2);
 }
 /*navbar*/
-
-nav{
-  height: 60px;
-  margin-top: 15px;
-}
 
 .sr-only {
   position: absolute;
@@ -160,6 +153,10 @@ nav{
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+.navbar-brand{
+  padding: 0;
 }
 
 .logo{
@@ -199,6 +196,10 @@ background: var(--color-body-ligth);
     height: 2px;
     opacity: 1;
 }
+
+.offcanvas{
+  background-color: var(--color-uno-ban);
+} 
 
 .navbar-toggler {
     border:none;
@@ -548,7 +549,7 @@ background: var(--color-primario);
 }
 
 .trabajos{
-  padding: 25px;
+  padding-top: 25px;
 }
  
 .trabajos hr{
@@ -576,6 +577,14 @@ background: var(--color-primario);
   transform: scale(1.1);
 }
 
+
+.wave-w{
+  height: 20vh;
+  background-image: url(/assets/wave-work-2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
 
 /*section blog*/
 
@@ -697,11 +706,19 @@ background: var(--color-primario);
 
 
 /*footer*/
+
+.wave-f{
+  height: 20vh;
+  background-image: url(/assets/wave-card-2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
 footer{
-  padding-top: 60px;
   background-color: #f4f6fa;
   color:#8a949d;
-  background-image: url(/assets/wave-f-1.svg);
+  background-color: var(--color-uno-ban);
   background-position: bottom;
   background-size:cover;
   background-repeat: no-repeat;
@@ -849,6 +866,22 @@ hr{
 
     .card-cruz .col-md-3{
       height: max-content;
+    }
+
+
+    .wave-1{
+      height: 5vh;
+    }
+
+    .wave-f{
+      height: 8vh;
+    }
+
+    .wave-2{
+      height: 5vh;
+    }
+    .wave-3{
+      height: 7vh;
     }
   }
 
