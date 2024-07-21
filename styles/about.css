@@ -352,35 +352,55 @@ background: var(--color-body-ligth);
   /* works */ 
 
 
+/* works */ 
+.work{
+  background-image: url(/assets/wave-trabajos.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.work h6{
+  color: var(--color-details);
+}
+
 .trabajos{
-    padding: 25px;
-  }
+  padding-top: 25px;
+}
+ 
+.trabajos hr{
+  width: 35%;
+  color: var(--gradient-background);
+}
+
+.work-galery{
+  display: flex;
+  justify-content: center;
+}
+
+.work-galery img {
+  width: 100%;
+  transition: 0.5s;
    
-  .trabajos hr{
-    width: 35%;
-    color: var(--color-details)
-  }
-  
-  .work-galery{
-    display: flex;
-    justify-content: center;
-  }
-  
-  .work-galery img {
-    width: 100%;
-    transition: 0.5s;
-     
-  }
-  
-  .work-galery a{
-    color: var(--color-details);
-  }
-  
-  
-  .work-galery img:hover{
-    transform: scale(1.1);
-  }
-  
+}
+
+.work-galery a{
+  color: var(--color-details);
+}
+
+
+.work-galery img:hover{
+  transform: scale(1.1);
+}
+
+
+.wave-w{
+  height: 20vh;
+  background-image: url(/assets/wave-work-2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
 
 
 /*hablemos*/
@@ -503,72 +523,70 @@ background: var(--color-body-ligth);
   
 
 
- /*footer*/
-footer{
-    background-color: #1e2832;
-    color:#8a949d;
-  }
-  
-  
-  footer img{
-    display: flex;
-    width: 15em;
-    margin: auto;
-  }
-  
-  .footer-main{
-    display: flex;
-    align-items: center;
-  }
-  
-  #f-contact .wps{
-    color: var(--color-body-ligth);
-    background-color: #16a359;
-    border: none;
-    font-weight: 400;
-      padding: 7px;
-      border-radius: 25px;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-  }
-  
-  #f-contact a{
-    display:flex;
-    padding: 10px 0 ;
-    color: #8a949d;
-    transition: .2s;
-  }
-  
-  #linkf h5{
-    color: var(--color-letra) !important;
-  }
-  
-  .footer-copy{
-    background-color: #1c242d;
-  }
-  
-  .footer-copy .col-md-12{
-    display: flex;
-    justify-content: center;
-    padding-top: 15px ;
-  } 
+/*footer*/
 
+.wave-f{
+  height: 20vh;
+  background-image: url(/assets/wave-card-2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+footer{
+  background-color: #f4f6fa;
+  color:#8a949d;
+  background-color: var(--color-uno-ban);
+  background-position: bottom;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+footer img{
+  display: flex;
+  width: 15em;
+  margin: auto;
+}
+
+.footer-main{
+  display: flex;
+  align-items: center;
+}
+
+#f-contact .wps{
+  color: var(--color-body-ligth);
+  background-color: #16a359;
+  border: none;
+  font-weight: 400;
+    padding: 7px;
+    border-radius: 25px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#f-contact a{
+  display:flex;
+  padding: 10px 0 ;
+  color: #8a949d;
+  transition: .2s;
+}
+
+.footer-copy{
+  background-color: var(--color-uno-ban);
+}
+
+.footer-copy .col-md-12{
+  display: flex;
+  justify-content: center;
+  padding-top: 15px ;
+}
   /*edition h*/ 
 
 
 h3{
     font-size: 2.5em;
     font-weight: 600;
-}
-
-h4{
-  display:inline-block;
-  background: linear-gradient(-30deg, rgba(31,20,157,1) 5%, rgba(31,130,227,1) 55%, rgba(26,221,202,1) 93%);
-    
-
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
 }
 
 hr{
