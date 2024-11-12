@@ -237,39 +237,27 @@ background: var(--color-body-ligth);
 }
 
 
-  /*banner*/ 
+/*banner*/ 
 
-#bannertop {
-  color: var(--color-body-ligth);
-  min-height: 60vh;
-  padding-top: 20vh;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    background: rgb(31,20,157);
-    background: linear-gradient(90deg, rgba(31,20,157,1) 5%, rgba(31,130,227,1) 55%, rgba(26,221,202,1) 93%);
-    
+#banner{
+  background: var(--color-uno-ban);
 }
 
-#bannertop img{
-  max-width: 100%;
+#bannertop {
+  padding-top: 20vh;
+  color: var(--color-body-ligth);
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
 }
 
 #bannertop h2{
-    font-size: 3.6em;
     font-weight: 800;
-    line-height: 1.2em;
-}
-
-#bannertop h3{
-    font-weight: 300;
-    font-size: 24px;
 }
 
 /*div hijo del banner*/
 
 #fondo {
-    text-align: center;
     opacity: 0;
     animation-name: aparicion;
     animation-duration: 1s;
@@ -287,6 +275,33 @@ background: var(--color-body-ligth);
       opacity: 1;
       transform: scale(1) translateY(0);
     }
+}
+
+
+/*boton del baner*/
+
+.botones{
+  display: flex;
+  justify-content: center;
+}
+
+.botones .col-lg-5{
+  display: flex;
+  justify-content: center;
+}
+
+.botones .btn{
+  width: 150px;
+  height: 50px;
+}
+/* wave banner */
+
+.wave-1{
+  height: 20vh;
+  background-image: url(/assets/wave-ban.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
 }
 
 
