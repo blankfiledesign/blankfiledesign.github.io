@@ -405,15 +405,15 @@ background: var(--color-body-ligth);
   }
 
 .accordion-item{
-  background-color: #ff000000;
+  background-color: var(--color-primario);
+  border-radius: 15px !important;
+  margin: 3px;
 
 }
 .accordion-button{
   font-size: 0.8em !important;
-  background-color: #c0212100;
   font-weight: 500;
-  background-color: var(--color-primario);
-      
+  background-color: var(--color-letra);
   
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -424,7 +424,7 @@ background: var(--color-body-ligth);
   z-index: 0;
   outline: 0;
   box-shadow:none;
-  background-color: var(--color-primario);
+  background-color: var(--color-letra);
 }
 
 .accordion-button:not(.collapsed)::after {
