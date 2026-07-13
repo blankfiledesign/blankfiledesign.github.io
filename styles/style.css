@@ -405,15 +405,16 @@ background: var(--color-body-ligth);
   }
 
 .accordion-item{
-  background-color: var(--color-primario);
+  background-color: var(--color-dos-btn);
   border-radius: 15px !important;
   margin: 3px;
+  color: var(--color-body-ligth);
 
 }
 .accordion-button{
   font-size: 0.8em !important;
   font-weight: 500;
-  background-color: var(--color-letra);
+  background-color: var(--color-body-ligth);
   
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -424,7 +425,7 @@ background: var(--color-body-ligth);
   z-index: 0;
   outline: 0;
   box-shadow:none;
-  background-color: var(--color-letra);
+  background-color: var(--color-body-ligth);
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -538,14 +539,14 @@ background: var(--color-primario);
 
 /* works */ 
 .work{
-  background-image: url(/assets/wave-trabajos.svg);
+  background-image: url(/assets/wave-card.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
 }
 
-.work h6{
-  color: var(--color-details);
+.work h5{
+  color: var(--color-body-ligth);
 }
 
 .trabajos{
@@ -606,7 +607,7 @@ background: var(--color-primario);
   min-height: 300px;
   width: 100%;
   max-width: 320px;
-  background-color: var(--color-primario);
+  background-color: var(--color-uno-ban);
   border-radius: 10px;
   padding: 10px 30px;
   overflow: hidden;
